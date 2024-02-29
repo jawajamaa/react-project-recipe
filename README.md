@@ -9,11 +9,11 @@ When selected, a receipe would expand to show all the pieces of information as a
 The components that I envision would be App.js as the top of the tree, then a Form component to add a new recipe and satisfy the controlled form deliverable, as well as the POST method to persist the new Recipe to the db.json.
 
     App.js
-    |--Header.js
-    |  |--NewRecipe.js
+    |--NavBar.js
+    |  
     |
     |--RecipeList.js
-      |-Recipe.js
+      |-Recipe.js  |--NewRecipe.js
       |-RecipeOverlay.js
 
 Using the above components, I would use React Router to create client side routes, where App would be Home with the list of receipes, New Recipe would navigate to the NewRecipe component containing the controlled form to submit a new recipe
