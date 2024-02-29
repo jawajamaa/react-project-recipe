@@ -1,9 +1,15 @@
+import { MyConsumer } from "../MyContext";
+
 function Recipe() {
 
     return(
-        <>
-            This is the Recipe component
-        </>
+        <MyConsumer>
+            {data =>
+
+                <h1>{ data.recipe }</h1>
+
+            }
+        </MyConsumer>
     )
 };
 

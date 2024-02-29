@@ -7,13 +7,21 @@
 }
 
 :root {
+  --background-color: #0a0a0a;
+  --foreground-color: #003cff;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #0a0a0a;
+  --toggle-bg: #f0eb9d;
+  --toggle-fg: #ffd000;
+}
+/* :root {
   --background-color: #f6f6f6;
   --foreground-color: #003cff;
   --primary-text-color: #0a0a0a;
   --secondary-text-color: #ffffff;
   --toggle-bg: #f0eb9d;
   --toggle-fg: #ffd000;
-}
+} */
 
 [data-theme = "dark"] {
   --background-color: #0a0a0a;

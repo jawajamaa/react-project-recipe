@@ -9,17 +9,19 @@ function NavBar({ isDark, handleChange }) {
     // }
 
     return(
-        <div className = "toggle-container">
-            <input
-                type= "checkbox"
-                id = "check"
-                className = "toggle"
-                onChange = { handleChange }
-                checked = { isDark }
-            />
-            <label htmlFor = "check">Dark Mode</label>
-            {/* <Toggle /> */}
-            {/* <button onClick = { handleClick }>{isDark ? "Light Mode" : "Dark Mode" }</button> */}
+        <div>
+            <div className = "toggle-container">
+                <input
+                    type= "checkbox"
+                    id = "check"
+                    className = "toggle"
+                    onChange = { handleChange }
+                    checked = { isDark }
+                />
+                <label htmlFor = "check">Dark Mode</label>
+                {/* <Toggle /> */}
+                {/* <button onClick = { handleClick }>{isDark ? "Light Mode" : "Dark Mode" }</button> */}
+            </div>
         </div>
     )
 };

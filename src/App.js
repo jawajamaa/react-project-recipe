@@ -1,31 +1,24 @@
 import React, { useState } from "react";
 import NavBar from "./components/NavBar";
 import "./App.css";
+import RecipeList from "./components/RecipeList";
+import { MyConsumer } from "./MyContext";
 
 function App() {
     const[isDark, setIsDark] = useState(false);
 
-    // const appClass = isDark ? "App dark" : "App light";
-    console.log(isDark);
+    console.log(MyConsumer);
     
     return(
-        // <div data-theme = { isDark ? "dark" : "light" }
-        //     className = { appClass }
-        // >
-        <>
-            <header data-theme = { isDark ? "dark" : "light" }>
-              <NavBar
-              isDark = { isDark } 
-              handleChange = { () => setIsDark(!isDark) }
-              />
-            </header>
-            <main data-theme = { isDark ? "dark" : "light" }>
-                <div className = "box">
+            <div className = "App" id = "dark">
+                <NavBar />
+                <div>
                     <h1 className = "title">Home App Home</h1>
                 </div>
-            </main>
-        {/* </div> */}
-        </>
+                <div>
+                    <RecipeList />
+                </div>
+            </div>
     )
 };
 

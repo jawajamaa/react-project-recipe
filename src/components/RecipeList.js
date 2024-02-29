@@ -1,9 +1,12 @@
+
+import Recipe from "./Recipe";
+
 function RecipeList() {
 
 
     return(
         <>
-            This is the RecipeList component
+            <Recipe />
         </>
     )
 };
