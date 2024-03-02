@@ -3,19 +3,20 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+}
+
+.App-dark{
   background-color: var(--background-color);
+  color: var(--primary-text-color);
+
+}
+.App-light{
+  background-color: var(--light-background-color);
+  color: var(--secondary-text-color);
 }
 
 .title {
   color: var(--primary-text-color);
   top: 2em;
-  justify-content: center;
 }
-
-/* .box {
-  padding: 20px;
-  border-radius: 10px;
-  background-color: var(--foreground-color); 
-} */

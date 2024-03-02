@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import NavBar from "./components/NavBar";
+import "./index.css";
 import "./App.css";
 import RecipeList from "./components/RecipeList";
 import { DarkMode, Recipes } from "./MyContext";
@@ -9,6 +10,7 @@ const RECIPE_URL = "http://localhost:4000/recipes/";
 function App() {
     const[isDark, setIsDark] = useState(false);
     const[recipeObj, setRecipeObj] = useState([]);
+    const className = "App-" + (isDark ? "dark" : "light");
 
     useEffect(() => {
         fetch(RECIPE_URL)
@@ -18,9 +20,9 @@ function App() {
     
     return(
             <DarkMode.Provider value = { isDark }>
-                <div className = "App">
+                <div className = { className }>
                     <div>
-                        <h1 className = "title">Home App Home</h1>
+                        <h1 className = "title">Recipe Collection</h1>
                     </div>
                     <NavBar setIsDark={setIsDark} />
                     <Recipes.Provider value = { recipeObj }>

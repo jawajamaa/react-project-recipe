@@ -1,0 +1,6 @@
+.recipe-list-dark{
+    color: var(--primary-text-color);
+}
+.recipe-list-light{
+    color: var(--secondary-text-color);
+}

@@ -1,3 +1,47 @@
+/* .navbar{
+    position: fixed;
+    top: 5px;
+    left: 5px;
+} */
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: var(--z-fixed);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: var(--header-height);
+    margin: 1em;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+
+.nav-link{
+    color: var(--primary-text-color);
+    font-weight: var(--font-semi-bold);
+    transition: color 0.4s;
+}
+ 
+.nav-link:hover {
+    color: var(--foreground-color);
+}
+/* .active {
+    color: red;
+} */
+
+
 .toggle-container {
     position: absolute;
     top: 2em;

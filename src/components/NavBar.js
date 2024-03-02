@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import "../index.css";
 import "./NavBar.css";
 import { useContext } from "react";
 import { DarkMode } from "../MyContext";
@@ -11,21 +12,40 @@ function NavBar({ setIsDark }) {
     }
 
     return(
-        <div>
-            <nav>
-                <NavLink
-                    to = "/"
-                    className = "nav-link"
-                    >
-                        Home
-                    </NavLink>
-                <NavLink
-                    to = "./RecipeList"
-                    className = "nav-link"
-                    >
-                        Recipe List
-                    </NavLink>
-                </nav>    
+        <header className = "header">
+            <nav className = "nav-container">
+                <div 
+                    className = "nav-menu"
+                    id = "nav-menu"
+                >
+                    <ul className = "nav-list">
+                        <li className = "nav-item">
+                            <NavLink
+                                to = "/"
+                                // className = "nav-link"
+                            >
+                                Home
+                            </NavLink>
+                        </li>
+                        <li className = "nav-item">   
+                            <NavLink
+                                to = "./RecipeList"
+                                // className = "nav-link"
+                            >
+                                Recipe List
+                            </NavLink>
+                        </li>   
+                        <li className = "nav-item">   
+                            <NavLink
+                                to = "./RecipeList/NewRecipe"
+                                // className = "nav-link"
+                            >
+                                Enter New Recipe
+                            </NavLink>
+                        </li> 
+                    </ul>
+                </div>
+            </nav>    
             <div className = "toggle-container">
                 <input
                     type= "checkbox"
@@ -34,10 +54,9 @@ function NavBar({ setIsDark }) {
                     onChange = { updateDarkMode }
                     checked = { isDark }
                 />
-                <label htmlFor = "check">Dark Mode</label>
-        
+                <label htmlFor = "check">{ isDark ? "Dark Mode" : "Light Mode" }</label>
             </div>
-        </div>
+        </header>
     )
 };
 
