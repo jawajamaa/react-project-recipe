@@ -1,15 +1,24 @@
-import { MyConsumer } from "../MyContext";
+// import { MyConsumer } from "../MyContext";
 
-function Recipe() {
+function Recipe({ recipe }) {
 
     return(
-        <MyConsumer>
-            {data =>
+        // <MyConsumer>
+        //     {context =>
 
-                <h1>{ data.recipe }</h1>
+        //         { context.recipes.map(recipe => (
+        //             <div>
+        //                 <img>{recipe.image}</img>
+        //                 <h2>{recipe.name}</h2>
+        //             </div>
+        //         )) 
+        //         }
 
-            }
-        </MyConsumer>
+        //     }
+        // </MyConsumer>
+        <>
+            <h2>{ recipe }</h2>
+        </>
     )
 };
 

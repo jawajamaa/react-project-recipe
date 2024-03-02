@@ -1,6 +1,5 @@
 import App from "./App";
 import ErrorPage from "./components/ErrorPage";
-import NavBar from "./components/NavBar";
 import NewRecipe from "./components/NewRecipe";
 import RecipeOverlay from "./components/RecipeOverlay";
 import Recipe from "./components/Recipe";
@@ -13,23 +12,19 @@ const routes = [
         errorElement: <ErrorPage />,
         children: [
             {
-                path: "./components/NavBar",
-                element: <NavBar />,
-            },
-            {
-                path: "./components/RecipeList",
+                path: "/RecipeList",
                 element: <RecipeList />,
                 children: [
                     {
-                        path: "./components/Recipe",
+                        path: "/RecipeList/Recipe",
                         element: <Recipe />
                     },
                     {
-                        path: "./components/RecipeOverlay",
+                        path: "/RecipeList/RecipeOverlay",
                         element: <RecipeOverlay />
                     },
                     {
-                        path: "./components/NewRecipe",
+                        path: "/RecipeList/NewRecipe",
                         element: <NewRecipe />
                     }
                 ]
