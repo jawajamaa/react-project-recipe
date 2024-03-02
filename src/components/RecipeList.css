@@ -4,3 +4,9 @@
 .recipe-list-light{
     color: var(--secondary-text-color);
 }
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

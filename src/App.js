@@ -21,15 +21,19 @@ function App() {
     return(
             <DarkMode.Provider value = { isDark }>
                 <div className = { className }>
-                    <div>
+                    {/* <div>
                         <h1 className = "title">Recipe Collection</h1>
-                    </div>
-                    <NavBar setIsDark={setIsDark} />
-                    <Recipes.Provider value = { recipeObj }>
-                        <div>
-                            <RecipeList />
-                        </div>
-                    </Recipes.Provider>
+                    </div> */}
+                    <header>
+                        <NavBar setIsDark={setIsDark} />
+                    </header>
+                    <main>
+                        <Recipes.Provider value = { recipeObj }>
+                            {/* <div> */}
+                                <RecipeList />
+                            {/* </div> */}
+                        </Recipes.Provider>
+                    </main>
                 </div>
             </DarkMode.Provider>
     )

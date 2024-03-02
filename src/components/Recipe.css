@@ -1,0 +1,15 @@
+.card {
+    flex: 1 0 500px;
+    box-sizing: border-box;
+    border: 1px #000000;
+    height: 33%;
+    width: 24%;
+    margin: 1rem .25em;
+    border-radius: 10px;
+}
+
+.photo {
+    position: relative;
+    height: 150px;
+    width: 150px;
+}

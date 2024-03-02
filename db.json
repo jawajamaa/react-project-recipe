@@ -6,100 +6,100 @@
                 "name": "Healthy Fried Rice", 
                 "category": "Dinner",
                 "vegetarian": true,
-                "recipe-total-prep-time": 15,
-                "my-total-prep-time": 30, 
+                "prepTime": 15,
+                "myPrepTime": 30, 
                 "url": "https://www.elizabethrider.com/healthy-fried-rice-recipe/",
-                "image": "./images/fried-rice-obi-unsplash.jpg"
+                "image": "../images/fried-rice-obi-unsplash.jpg"
             },
             {
                 "id": 2,
                 "name": "Baked Oatmeal",
                 "category": "Breakfast",
                 "vegetarian": true,
-                "recipe-total-prep-time": 50,
-                "my-total-prep-time": 75, 
+                "prepTime": 50,
+                "myPrepTime": 75, 
                 "url": "https://celebratingsweets.com/mixed-berry-vanilla-baked-oatmeal/",
-                "image": "./images/oatmeal-margarita-zueva-unsplash.jpg"
+                "image": "../images/oatmeal-margarita-zueva-unsplash.jpg"
             },
             {
                 "id": 3,
                 "name": "Roasted Butternut Squash Soup",
                 "category": "Dinner",
                 "vegetarian": true,
-                "recipe-total-prep-time": 85,
-                "my-total-prep-time": 85, 
+                "prepTime": 85,
+                "myPrepTime": 85, 
                 "url": "https://www.aheadofthyme.com/2015/12/roasted-butternut-squash-soup/",
-                "image": "./images/bttrnt-sq-soup-jezebel-rose-unsplash.jpg"
+                "image": "../images/bttrnt-sq-soup-jezebel-rose-unsplash.jpg"
             }, 
             {
                 "id": 4,
                 "name": "Funfetti Cake",
                 "category": "Dessert",
                 "vegetarian": true,
-                "recipe-total-prep-time": 90,
-                "my-total-prep-time": 120, 
+                "prepTime": 90,
+                "myPrepTime": 120, 
                 "url": "https://sugarspunrun.com/funfetti-cake-scratch/",
-                "image": "./images/cupcakes-brooke-lark-unsplash.jpg"
+                "image": "../images/cupcakes-brooke-lark-unsplash.jpg"
             },
             {
                 "id": 5,
                 "name": "Bourbon Granola",
                 "category": "Breakfast",
                 "vegetarian": true,
-                "recipe-total-prep-time": 90,
-                "my-total-prep-time": 90, 
+                "prepTime": 90,
+                "myPrepTime": 90, 
                 "url": "https://docs.google.com/document/d/1-SIhkV0XJOQv_iwTCdvhEj3O2frkHOJ7z-1Gj_eqOcc/edit?usp=sharing",
-                "image": "./images/granola-heather-barnes-unsplash.jpg"
+                "image": "../images/granola-heather-barnes-unsplash.jpg"
             },
             {
                 "id": 6,
                 "name": "Spiced Granola (Pandemic Remix)",
                 "category": "Breakfast",
                 "vegetarian": true,
-                "recipe-total-prep-time": 90,
-                "my-total-prep-time": 90, 
+                "prepTime": 90,
+                "myPrepTime": 90, 
                 "url": "https://docs.google.com/document/d/1xez4x93Po6X0GDJAA-15Dn3__Xc4VSVFBP4pySYrFnQ/edit?usp=sharing",
-                "image": "./images/granola-heather-barnes-unsplash.jpg"
+                "image": "../images/granola-heather-barnes-unsplash.jpg"
             },
             {
                 "id": 7,
                 "name": "No Bake Peanut Butter Bars",
                 "category": "Dessert",
                 "vegetarian": true,
-                "recipe-total-prep-time": 25,
-                "my-total-prep-time": 30, 
+                "prepTime": 25,
+                "myPrepTime": 30, 
                 "url": "https://amandascookin.com/no-bake-dessert-peanut-butter-bars/?utm_source=pocket_collection_story#wprm-recipe-container-24904",
-                "image": "./images/no-bake-chocolate-peanut-butter-bars.jpg"
+                "image": "../images/no-bake-chocolate-peanut-butter-bars.jpg"
             },
             {
                 "id": 8,
                 "name": "Peach Cobbler",
                 "category": "Dessert",
                 "vegetarian": true,
-                "recipe-total-prep-time": 55,
-                "my-total-prep-time": 60, 
+                "prepTime": 55,
+                "myPrepTime": 60, 
                 "url": "https://tastesbetterfromscratch.com/peach-cobbler/#recipe",
-                "image": "./images/peach-cobbler-sarah-brown-unsplash.jpg"
+                "image": "../images/peach-cobbler-sarah-brown-unsplash.jpg"
             },
             {
                 "id": 9,
                 "name": "Sauteed Cabbage",
                 "category": "Dinner",
                 "vegetarian": false,
-                "recipe-total-prep-time": 15,
-                "my-total-prep-time": 45, 
+                "prepTime": 15,
+                "myPrepTime": 45, 
                 "url": "https://docs.google.com/document/d/1oz8bL_XyTFeJBz3wlmDCTP2Aq1xYM6rzoPx0AvOSLHY/edit?usp=sharing",
-                "image": "./images/cabbage-arnaldo-aldana-unsplash.jpg"
+                "image": "../images/cabbage-arnaldo-aldana-unsplash.jpg"
             },
             {
                 "id": 10,
                 "name": "Tomato Chicken Fajita Curry (Slow Cooker Fajitas)",
                 "category": "Dinner",
                 "vegetarian": false,
-                "recipe-total-prep-time": 190,
-                "my-total-prep-time": 360, 
+                "prepTime": 190,
+                "myPrepTime": 360, 
                 "url": "https://fitslowcookerqueen.com/slow-cooker-steak-fajitas/",
-                "image": "fajitas-hybrid-storytellers-unsplash.jpg"
+                "image": "../images/fajitas-hybrid-storytellers-unsplash.jpg"
             }
         ]
 }

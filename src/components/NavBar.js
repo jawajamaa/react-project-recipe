@@ -13,6 +13,9 @@ function NavBar({ setIsDark }) {
 
     return(
         <header className = "header">
+            <div>
+                <h1 className = "title">Recipe Collection</h1>
+            </div>
             <nav className = "nav-container">
                 <div 
                     className = "nav-menu"
