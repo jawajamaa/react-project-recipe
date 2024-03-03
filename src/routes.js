@@ -12,6 +12,10 @@ const routes = [
         errorElement: <ErrorPage />,
         children: [
             {
+                path: "/NewRecipe",
+                element: <NewRecipe />
+            },
+            {
                 path: "/RecipeList",
                 element: <RecipeList />,
                 children: [
@@ -22,10 +26,6 @@ const routes = [
                     {
                         path: "/RecipeList/RecipeOverlay",
                         element: <RecipeOverlay />
-                    },
-                    {
-                        path: "/RecipeList/NewRecipe",
-                        element: <NewRecipe />
                     }
                 ]
             }

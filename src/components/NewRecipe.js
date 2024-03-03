@@ -1,9 +1,13 @@
 function NewRecipe() {
 
     return(
-        <>
-            This is the NewRecipe component
-        </>
+        <div className = "new-recipe">
+
+            <h3>
+                This is the NewRecipe component
+            </h3>
+
+        </div>
     )
 };
 

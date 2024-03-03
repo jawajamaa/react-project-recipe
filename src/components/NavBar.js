@@ -40,7 +40,7 @@ function NavBar({ setIsDark }) {
                         </li>   
                         <li className = "nav-item">   
                             <NavLink
-                                to = "./RecipeList/NewRecipe"
+                                to = "./NewRecipe"
                                 // className = "nav-link"
                             >
                                 Enter New Recipe

@@ -19,19 +19,7 @@ function RecipeList() {
                     <Recipe 
                         key = { recipe.id }
                         recipe = { recipe }
-                    />
-                    // <div 
-                    // className = "item"
-                    // key = { recipe.id }
-                    // >
-                    //     <img 
-                    //         src = { recipe.image } 
-                    //         alt = { recipe.name }
-                    //     ></img>
-                    //     <h3>{ recipe.name }</h3> 
-                    //     <p>{ recipe.prepTime }</p>
-                    //     <p>{ recipe.myPrepTime }</p>   
-                    // </div>
+                        />
                 ))}
             </div>    
         </div>

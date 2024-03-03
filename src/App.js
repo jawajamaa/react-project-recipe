@@ -4,6 +4,7 @@ import "./index.css";
 import "./App.css";
 import RecipeList from "./components/RecipeList";
 import { DarkMode, Recipes } from "./MyContext";
+import NewRecipe from "./components/NewRecipe";
 
 const RECIPE_URL = "http://localhost:4000/recipes/";
 
@@ -31,6 +32,7 @@ function App() {
                         <Recipes.Provider value = { recipeObj }>
                             {/* <div> */}
                                 <RecipeList />
+                                <NewRecipe />
                             {/* </div> */}
                         </Recipes.Provider>
                     </main>

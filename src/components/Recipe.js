@@ -35,7 +35,7 @@ console.log(name)
                     <p>Food Category: { category }</p>
                     {/* <p>{ vegetarian }</p> */}
                     <a href = { url }>
-                        <button>Link to Recipe!</button>
+                        <button className = "extLinkBtn" >Link to Recipe!</button>
                     </a>
                 </div>
             </div>   
