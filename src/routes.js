@@ -1,9 +1,8 @@
 import App from "./App";
 import ErrorPage from "./components/ErrorPage";
 import NewRecipe from "./components/NewRecipe";
-import RecipeOverlay from "./components/RecipeOverlay";
-import Recipe from "./components/Recipe";
 import RecipeList from "./components/RecipeList";
+import RecipeOverlay from "./components/RecipeOverlay";
 
 const routes = [
     {
