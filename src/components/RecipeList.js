@@ -14,7 +14,7 @@ function RecipeList() {
 
     return(
         <div className = {className}>
-            <div className = "box">
+            <div className = "card-container">
                 {recipeObj.map(recipe => (
                     <Recipe 
                         key = { recipe.id }

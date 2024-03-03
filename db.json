@@ -9,7 +9,8 @@
                 "prepTime": 15,
                 "myPrepTime": 30, 
                 "url": "https://www.elizabethrider.com/healthy-fried-rice-recipe/",
-                "image": "../images/fried-rice-obi-unsplash.jpg"
+                "thumb": "../images/300-square/fried-rice-obi-unsplash-300px.jpg",
+                "image": "../images/1560-square/fried-rice-obi-unsplash.jpg"
             },
             {
                 "id": 2,
@@ -19,7 +20,8 @@
                 "prepTime": 50,
                 "myPrepTime": 75, 
                 "url": "https://celebratingsweets.com/mixed-berry-vanilla-baked-oatmeal/",
-                "image": "../images/oatmeal-margarita-zueva-unsplash.jpg"
+                "thumb": "../images/300-square/oatmeal-margarita-zueva-unsplash-300px.jpg",
+                "image": "../images/1560-square/oatmeal-margarita-zueva-unsplash.jpg"
             },
             {
                 "id": 3,
@@ -29,7 +31,8 @@
                 "prepTime": 85,
                 "myPrepTime": 85, 
                 "url": "https://www.aheadofthyme.com/2015/12/roasted-butternut-squash-soup/",
-                "image": "../images/bttrnt-sq-soup-jezebel-rose-unsplash.jpg"
+                "thumb": "../images/300-square/bttrnt-sq-soup-jezebel-rose-unsplash-300px.jpg",
+                "image": "../images/1560-square/bttrnt-sq-soup-jezebel-rose-unsplash.jpg"
             }, 
             {
                 "id": 4,
@@ -39,7 +42,8 @@
                 "prepTime": 90,
                 "myPrepTime": 120, 
                 "url": "https://sugarspunrun.com/funfetti-cake-scratch/",
-                "image": "../images/cupcakes-brooke-lark-unsplash.jpg"
+                "thumb": "../images/300-square/cupcakes-brooke-lark-unsplash-300px.jpg",
+                "image": "../images/1560-square/cupcakes-brooke-lark-unsplash.jpg"
             },
             {
                 "id": 5,
@@ -49,7 +53,8 @@
                 "prepTime": 90,
                 "myPrepTime": 90, 
                 "url": "https://docs.google.com/document/d/1-SIhkV0XJOQv_iwTCdvhEj3O2frkHOJ7z-1Gj_eqOcc/edit?usp=sharing",
-                "image": "../images/granola-heather-barnes-unsplash.jpg"
+                "thumb": "../images/300-square/granola-heather-barnes-unsplash-300px.jpg",
+                "image": "../images/1560-square/granola-heather-barnes-unsplash.jpg"
             },
             {
                 "id": 6,
@@ -59,7 +64,8 @@
                 "prepTime": 90,
                 "myPrepTime": 90, 
                 "url": "https://docs.google.com/document/d/1xez4x93Po6X0GDJAA-15Dn3__Xc4VSVFBP4pySYrFnQ/edit?usp=sharing",
-                "image": "../images/granola-heather-barnes-unsplash.jpg"
+                "thumb": "../images/300-square/granola-heather-barnes-unsplash-300px.jpg",
+                "image": "../images/1560-square/granola-heather-barnes-unsplash.jpg"
             },
             {
                 "id": 7,
@@ -69,7 +75,8 @@
                 "prepTime": 25,
                 "myPrepTime": 30, 
                 "url": "https://amandascookin.com/no-bake-dessert-peanut-butter-bars/?utm_source=pocket_collection_story#wprm-recipe-container-24904",
-                "image": "../images/no-bake-chocolate-peanut-butter-bars.jpg"
+                "thumb": "../images/300-square/no-bake-chocolate-peanut-butter-bars-300px.jpg",
+                "image": "../images/1560-square/no-bake-chocolate-peanut-butter-bars.jpg"
             },
             {
                 "id": 8,
@@ -79,7 +86,8 @@
                 "prepTime": 55,
                 "myPrepTime": 60, 
                 "url": "https://tastesbetterfromscratch.com/peach-cobbler/#recipe",
-                "image": "../images/peach-cobbler-sarah-brown-unsplash.jpg"
+                "thumb": "../images/300-square/peach-cobbler-sarah-brown-unsplash-300px.jpg",
+                "image": "../images/1560-square/peach-cobbler-sarah-brown-unsplash.jpg"
             },
             {
                 "id": 9,
@@ -89,7 +97,8 @@
                 "prepTime": 15,
                 "myPrepTime": 45, 
                 "url": "https://docs.google.com/document/d/1oz8bL_XyTFeJBz3wlmDCTP2Aq1xYM6rzoPx0AvOSLHY/edit?usp=sharing",
-                "image": "../images/cabbage-arnaldo-aldana-unsplash.jpg"
+                "thumb": "../images/300-square/cabbage-arnaldo-aldana-unsplash-300px.jpg",
+                "image": "../images/1560-square/cabbage-arnaldo-aldana-unsplash.jpg"
             },
             {
                 "id": 10,
@@ -99,7 +108,8 @@
                 "prepTime": 190,
                 "myPrepTime": 360, 
                 "url": "https://fitslowcookerqueen.com/slow-cooker-steak-fajitas/",
-                "image": "../images/fajitas-hybrid-storytellers-unsplash.jpg"
+                "thumb": "../images/300-square/fajitas-hybrid-storytellers-unsplash-300px.jpg",
+                "image": "../images/1560-square/fajitas-hybrid-storytellers-unsplash.jpg"
             }
         ]
 }
