@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import { DarkMode, Recipes } from "../MyContext";
-import "../index.css";
 import "./RecipeList.css";
 import Recipe from "./Recipe";
+import { Outlet } from "react-router-dom";
 
 
 function RecipeList() {
@@ -21,7 +21,8 @@ function RecipeList() {
                         recipe = { recipe }
                         />
                 ))}
-            </div>    
+            </div>  
+            <Outlet/>  
         </div>
     )
 };

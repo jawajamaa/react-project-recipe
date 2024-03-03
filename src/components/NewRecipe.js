@@ -2,11 +2,13 @@ function NewRecipe() {
 
     return(
         <div className = "new-recipe">
-
-            <h3>
-                This is the NewRecipe component
-            </h3>
-
+            <form>
+                <input 
+                    type = "text"
+                    placeholder = "Enter name of dish">
+                            
+                </input>
+            </form>
         </div>
     )
 };

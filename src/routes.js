@@ -20,11 +20,7 @@ const routes = [
                 element: <RecipeList />,
                 children: [
                     {
-                        path: "/RecipeList/Recipe",
-                        element: <Recipe />
-                    },
-                    {
-                        path: "/RecipeList/RecipeOverlay",
+                        path: "/RecipeList/Recipe/:id",
                         element: <RecipeOverlay />
                     }
                 ]

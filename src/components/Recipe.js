@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "../index.css";
 import "./Recipe.css";
 
@@ -23,10 +24,12 @@ console.log(name)
             key = { id }
             >
                 <div className = "photo">
+                    <NavLink to = {"/RecipeList/Recipe/"+id}>
                     <img 
                         src = { thumb } 
                         alt = { name }
                     ></img>
+                    </NavLink>
                 </div>
                 <div className = "description">
                     <h3>{ name }</h3> 

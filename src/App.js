@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { Outlet } from "react-router-dom";
+import "./App.css";
+import { DarkMode, Recipes } from "./MyContext";
 import NavBar from "./components/NavBar";
 import "./index.css";
-import "./App.css";
-import RecipeList from "./components/RecipeList";
-import { DarkMode, Recipes } from "./MyContext";
-import NewRecipe from "./components/NewRecipe";
 
 const RECIPE_URL = "http://localhost:4000/recipes/";
 
@@ -31,8 +30,7 @@ function App() {
                     <main>
                         <Recipes.Provider value = { recipeObj }>
                             {/* <div> */}
-                                <RecipeList />
-                                <NewRecipe />
+                                <Outlet />
                             {/* </div> */}
                         </Recipes.Provider>
                     </main>
