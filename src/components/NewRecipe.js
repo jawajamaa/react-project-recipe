@@ -45,8 +45,8 @@ function NewRecipe() {
                 "name": name, 
                 "category": category,
                 "vegetarian": vegetarian, 
-                "prepTime": prepTime, 
-                "myPrepTime": myPrepTime, 
+                "prepTime": parseInt(prepTime), 
+                "myPrepTime": parseInt(myPrepTime), 
                 "url": url,
                 "thumb": thumb,
                 "image": image
@@ -94,7 +94,7 @@ console.log(formData);
                     <li>
                         <label>Total Prep Time</label><input 
                             type = "text"
-                            name = "prep-time"
+                            name = "prepTime"
                             step = "001"
                             placeholder = "enter a number of minutes"
                             value = { prepTime }
@@ -104,7 +104,7 @@ console.log(formData);
                     <li>
                         <label>Total Prep Time it takes You</label><input 
                             type = "text"
-                            name = "my-prep-time"
+                            name = "myPrepTime"
                             placeholder = "enter a number of minutes"
                             value = { myPrepTime }
                             onChange = { handleChange }
@@ -113,7 +113,7 @@ console.log(formData);
                     <li>
                         <label>Is there a website for this Recipe?</label><input 
                             type = "text"
-                            name = "website"
+                            name = "url"
                             placeholder = "enter url of website"
                             value = { url }
                             onChange = { handleChange }
@@ -122,7 +122,7 @@ console.log(formData);
                     <li>
                         <label>Small (300px square) Image</label><input 
                             type = "text"
-                            name = "small-image"
+                            name = "thumb"
                             placeholder = "enter url of image"
                             value = { thumb }
                             onChange = { handleChange }
@@ -131,6 +131,7 @@ console.log(formData);
                     <li>
                         <label>Large Image</label><input 
                             type = "text"
+                            name = "image"
                             placeholder = "enter url of large image"
                             value = { image }
                             onChange = { handleChange }
