@@ -1,12 +1,13 @@
 import { useState } from "react";
+import { useOutletContext } from "react-router-dom";
 
 function NewRecipe() {
     const [formData, setFormData] = useState({ 
         name: "",
         category: "",
-        vegetarian: false, 
-        prepTime: 0, 
-        myPrepTime: 0, 
+        vegetarian: "", 
+        prepTime: "", 
+        myPrepTime: "", 
         url: "",
         thumb: "",
         image: ""
@@ -23,85 +24,125 @@ function NewRecipe() {
         image
         } = formData;
 
-    function onChange(evt) {
+    const baseUrl = useOutletContext();
+
+    function handleChange(evt) {
         console.log(evt.target.value);
+        setFormData({
+            ...formData,
+            [evt.target.name]: evt.target.value
+        });
     }
+
+    function handleSubmit(evt) {
+        evt.preventDefault();
+        fetch(baseUrl, {
+            method: "POST",
+            headers: {
+                "Content-Type" : "application/json",
+            },
+            body: JSON.stringify({
+                "name": name, 
+                "category": category,
+                "vegetarian": vegetarian, 
+                "prepTime": prepTime, 
+                "myPrepTime": myPrepTime, 
+                "url": url,
+                "thumb": thumb,
+                "image": image
+            })
+        })
+            .then(r => r.json())
+            .then(data => setFormData(data))
+    }
+
+console.log(formData);
 
     return(
         <div className = "new-recipe">
-            <form>
-                <h2>Enter New Recipe Here</h2>
+            <form onSubmit = { handleSubmit }>
+                <h2>Enter New Recipe Below</h2>
                 <br />
                 <ul>
                     <li>
                         <label>Enter name of dish</label><input 
                             type = "text"
+                            name = "name"
                             placeholder = "Enter name of dish"
                             value = { name }
-                            onChange = { onChange } 
+                            onChange = { handleChange } 
                         />
                     </li>
                     <li>
                         <label>Dish Category</label><input 
                             type = "text"
+                            name = "category"
                             placeholder = "Dish Category"
                             value = { category }
-                            onChange = { onChange }
+                            onChange = { handleChange }
                         />
                     </li>
                     <li>
                         <label>Is the dish vegetarian?</label><input 
                             type = "text"
-                            placeholder = "Vegetarian?"
+                            name = "vegetarian"
+                            placeholder = "Please enter Yes or No"
                             value = { vegetarian }
-                            onChange = { onChange }
+                            onChange = { handleChange }
                         />
                     </li>
                     <li>
                         <label>Total Prep Time</label><input 
                             type = "text"
+                            name = "prep-time"
+                            step = "001"
                             placeholder = "enter a number of minutes"
                             value = { prepTime }
-                            onChange = { onChange }
+                            onChange = { handleChange }
                         />
                     </li>
                     <li>
                         <label>Total Prep Time it takes You</label><input 
                             type = "text"
+                            name = "my-prep-time"
                             placeholder = "enter a number of minutes"
                             value = { myPrepTime }
-                            onChange = { onChange }
+                            onChange = { handleChange }
                         />
                     </li>
                     <li>
                         <label>Is there a website for this Recipe?</label><input 
                             type = "text"
+                            name = "website"
                             placeholder = "enter url of website"
                             value = { url }
-                            onChange = { onChange }
+                            onChange = { handleChange }
                         />
                     </li>
                     <li>
                         <label>Small (300px square) Image</label><input 
                             type = "text"
+                            name = "small-image"
                             placeholder = "enter url of image"
                             value = { thumb }
-                            onChange = { onChange }
+                            onChange = { handleChange }
                         />
                     </li>
                     <li>
-                        <label>Is the dish vegetarian?</label><input 
+                        <label>Large Image</label><input 
                             type = "text"
-                            placeholder = "Vegetarian?"
+                            placeholder = "enter url of large image"
                             value = { image }
-                            onChange = { onChange }
+                            onChange = { handleChange }
                         />
                     </li>
-                    <button>Submit</button>
+                    <button
+                    type = "submit"
+                    >Add Recipe</button>
                 </ul>
             </form>
         </div>
     )
-};
+}
 
 export default NewRecipe;

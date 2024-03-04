@@ -5,7 +5,7 @@ import { DarkMode, Recipes } from "./MyContext";
 import NavBar from "./components/NavBar";
 import "./index.css";
 
-const RECIPE_URL = "http://localhost:4000/recipes/";
+const baseUrl = "http://localhost:4000/recipes/";
 
 function App() {
     const[isDark, setIsDark] = useState(false);
@@ -13,7 +13,7 @@ function App() {
     const className = "App-" + (isDark ? "dark" : "light");
 
     useEffect(() => {
-        fetch(RECIPE_URL)
+        fetch(baseUrl)
             .then(r => r.json())
             .then(setRecipeObj)
     }, [])
@@ -30,11 +30,13 @@ function App() {
                     <main>
                         <Recipes.Provider value = { recipeObj }>
                             {/* <div> */}
-                                <Outlet />
+                                <Outlet
+                                context = { baseUrl }
+                                />;
                             {/* </div> */}
-                        </Recipes.Provider>
-                    </main>
-                </div>
+                        </Recipes.Provider>;
+                    </main>;
+                </div>;
             </DarkMode.Provider>
     )
 };
