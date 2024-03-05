@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { DarkMode, Recipes } from "../MyContext";
+import { DarkMode, RecipesContext } from "../MyContext";
 import "./RecipeList.css";
 import Recipe from "./Recipe";
 import { Outlet } from "react-router-dom";
@@ -7,15 +7,15 @@ import { Outlet } from "react-router-dom";
 
 function RecipeList() {
     const isDark = useContext(DarkMode);
-    const recipeObj = useContext(Recipes)
+    const recipes = useContext(RecipesContext)
     const className = "recipe-list-" + (isDark ? "dark" : "light");
 
-    console.log(recipeObj);
+    console.log(recipes);
 
     return(
         <div className = {className}>
             <div className = "card-container">
-                {recipeObj.map(recipe => (
+                {recipes.map(recipe => (
                     <Recipe 
                         key = { recipe.id }
                         recipe = { recipe }

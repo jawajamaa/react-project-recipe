@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 import "./App.css";
-import { DarkMode, Recipes } from "./MyContext";
+import { DarkMode, RecipesContext } from "./MyContext";
 import NavBar from "./components/NavBar";
 import "./index.css";
 
@@ -9,13 +9,13 @@ const baseUrl = "http://localhost:4000/recipes/";
 
 function App() {
     const[isDark, setIsDark] = useState(false);
-    const[recipeObj, setRecipeObj] = useState([]);
+    const[recipes, setRecipes] = useState([]);
     const className = "App-" + (isDark ? "dark" : "light");
 
     useEffect(() => {
         fetch(baseUrl)
             .then(r => r.json())
-            .then(setRecipeObj)
+            .then(setRecipes)
     }, [])
     
     return(
@@ -30,11 +30,11 @@ function App() {
                         />
                     </header>
                     <main>
-                        <Recipes.Provider value = { {recipeObj, setRecipeObj} }>
+                        <RecipesContext.Provider value = { {recipes, setRecipes} }>
                                 <Outlet
                                 context = { baseUrl}
                                 />;
-                        </Recipes.Provider>;
+                        </RecipesContext.Provider>;
                     </main>;
                 </div>;
             </DarkMode.Provider>

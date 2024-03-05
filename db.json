@@ -111,37 +111,15 @@
       "image": "/images/1560-square/fajitas-hybrid-storytellers-unsplash.jpg"
     },
     {
-      "id": "90b3",
-      "name": "Dr. Dessert",
-      "category": "Dessert",
-      "vegetarian": "No",
-      "prepTime": 17,
-      "myPrepTime": 17,
-      "url": "www",
-      "thumb": "http",
-      "image": "large.image"
-    },
-    {
-      "id": "c725",
-      "name": "here's another!",
-      "category": "who knows?",
-      "vegetarian": "also who knows?",
-      "prepTime": 145,
-      "myPrepTime": 187,
-      "url": "url",
-      "thumb": "thumbnail image",
-      "image": "large image"
-    },
-    {
-      "id": "7d90",
-      "name": "Pizza",
-      "category": "Pizza",
-      "vegetarian": "can be",
-      "prepTime": 35,
-      "myPrepTime": 15,
-      "url": "www.pizzahut.com",
-      "thumb": "photo of pizza",
-      "image": "big photo of pizza"
+      "id": "0008",
+      "name": "pizza",
+      "category": "dinner",
+      "vegetarian": "no",
+      "prepTime": 25,
+      "myPrepTime": 25,
+      "url": "www.aol.com",
+      "thumb": "www.yahoo.com",
+      "image": "www.google.com"
     }
   ]
 }
