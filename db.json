@@ -111,70 +111,37 @@
       "image": "/images/1560-square/fajitas-hybrid-storytellers-unsplash.jpg"
     },
     {
-      "id": "d641",
-      "name": "New Choc PB",
-      "category": "Dessert!",
-      "vegetarian": "yes",
-      "prepTime": "",
-      "myPrepTime": "",
-      "url": "",
-      "thumb": "",
-      "image": ""
+      "id": "90b3",
+      "name": "Dr. Dessert",
+      "category": "Dessert",
+      "vegetarian": "No",
+      "prepTime": 17,
+      "myPrepTime": 17,
+      "url": "www",
+      "thumb": "http",
+      "image": "large.image"
     },
     {
-      "id": "09ed",
-      "name": "Dr. Dish",
-      "category": "dog food",
-      "vegetarian": "nope",
-      "prepTime": "",
-      "myPrepTime": "",
-      "url": "",
-      "thumb": "",
-      "image": ""
+      "id": "c725",
+      "name": "here's another!",
+      "category": "who knows?",
+      "vegetarian": "also who knows?",
+      "prepTime": 145,
+      "myPrepTime": 187,
+      "url": "url",
+      "thumb": "thumbnail image",
+      "image": "large image"
     },
     {
-      "id": "7c44",
-      "name": "chips",
-      "category": "anytime",
+      "id": "7d90",
+      "name": "Pizza",
+      "category": "Pizza",
       "vegetarian": "can be",
-      "prepTime": "",
-      "myPrepTime": "",
-      "url": "",
-      "thumb": "",
-      "image": ""
-    },
-    {
-      "id": "2b50",
-      "name": "chips",
-      "category": "anytime",
-      "vegetarian": "can be",
-      "prepTime": "",
-      "myPrepTime": "",
-      "url": "",
-      "thumb": "",
-      "image": ""
-    },
-    {
-      "id": "852c",
-      "name": "Deep Dish",
-      "category": "pizza",
-      "vegetarian": "nope",
-      "prepTime": "45",
-      "myPrepTime": "55",
-      "url": "www.latfh.com",
-      "thumb": "www",
-      "image": "www"
-    },
-    {
-      "id": "d73d",
-      "name": "even bigger dish",
-      "category": "moonshot",
-      "vegetarian": "yup",
-      "prepTime": 10,
-      "myPrepTime": "",
-      "url": "",
-      "thumb": "",
-      "image": ""
+      "prepTime": 35,
+      "myPrepTime": 15,
+      "url": "www.pizzahut.com",
+      "thumb": "photo of pizza",
+      "image": "big photo of pizza"
     }
   ]
 }

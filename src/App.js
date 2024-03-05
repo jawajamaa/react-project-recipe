@@ -25,15 +25,15 @@ function App() {
                         <h1 className = "title">Recipe Collection</h1>
                     </div> */}
                     <header>
-                        <NavBar setIsDark={setIsDark} />
+                        <NavBar 
+                        setIsDark={setIsDark} 
+                        />
                     </header>
                     <main>
-                        <Recipes.Provider value = { recipeObj }>
-                            {/* <div> */}
+                        <Recipes.Provider value = { {recipeObj, setRecipeObj} }>
                                 <Outlet
-                                context = { baseUrl }
+                                context = { baseUrl}
                                 />;
-                            {/* </div> */}
                         </Recipes.Provider>;
                     </main>;
                 </div>;

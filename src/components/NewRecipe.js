@@ -1,5 +1,7 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { useOutletContext } from "react-router-dom";
+// import App from "../App"
+import { Recipes } from "../MyContext";
 
 function NewRecipe() {
     const [formData, setFormData] = useState({ 
@@ -25,6 +27,7 @@ function NewRecipe() {
         } = formData;
 
     const baseUrl = useOutletContext();
+    const setRecipeObj = useContext(Recipes);
 
     function handleChange(evt) {
         console.log(evt.target.value);
@@ -53,10 +56,12 @@ function NewRecipe() {
             })
         })
             .then(r => r.json())
-            .then(data => setFormData(data))
+            .then(data => setRecipeObj(data))
     }
 
-console.log(formData);
+
+// console.log(recipeObj);
+// console.log(formData);
 
     return(
         <div className = "new-recipe">
