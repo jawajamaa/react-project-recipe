@@ -26,7 +26,7 @@ function NewRecipe() {
         } = formData;
 
     const baseUrl = useOutletContext();
-    const setRecipes = useContext(RecipesContext);
+    const { recipes, setRecipes } = useContext(RecipesContext);
 
     function handleChange(evt) {
         console.log(evt.target.value);
@@ -56,7 +56,8 @@ function NewRecipe() {
         })
             .then(r => r.json())
             // .then(data => console.log(data))
-            .then(data => setRecipes(data))
+            .then(data => setRecipes([
+                ...recipes, data]))
 
     }
 

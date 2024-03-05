@@ -7,7 +7,7 @@ import { Outlet } from "react-router-dom";
 
 function RecipeList() {
     const isDark = useContext(DarkMode);
-    const recipes = useContext(RecipesContext)
+    const { recipes } = useContext(RecipesContext)
     const className = "recipe-list-" + (isDark ? "dark" : "light");
 
     console.log(recipes);
