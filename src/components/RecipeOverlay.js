@@ -4,11 +4,8 @@ import { RecipesContext } from "../MyContext";
 import "./RecipeOverlay.css";
 
 function RecipeOverlay() {
-    const { recipes, setRecipes } = useContext(RecipesContext);
+    const { recipes } = useContext(RecipesContext);
     const { id } = useParams();
-
-    console.log(id);
-    console.log(recipes);
 
     const foundRecipe = recipes.find(recipe => recipe.id === id)
 
@@ -20,7 +17,10 @@ function RecipeOverlay() {
                 >X</NavLink>
             <div className="content">
                 <div className = "photo">
-                <img src={ foundRecipe.image } width="800" />
+                <img src={ foundRecipe.image } 
+                    width="800" 
+                    alt = { foundRecipe.name }
+                    />
                 </div>
                 <h2>{ foundRecipe.name }</h2>
                 <h3>{ foundRecipe.category }</h3> 

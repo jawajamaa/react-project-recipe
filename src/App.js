@@ -8,22 +8,27 @@ import "./index.css";
 const baseUrl = "http://localhost:4000/recipes/";
 
 function App() {
-    const[isDark, setIsDark] = useState(false);
+    const[isDark, setIsDark] = useState(true);
     const[recipes, setRecipes] = useState([]);
+    const[randomRecipe, setRandomRecipe] = useState(null);
     const className = "App-" + (isDark ? "dark" : "light");
 
     useEffect(() => {
         fetch(baseUrl)
             .then(r => r.json())
-            .then(setRecipes)
+            .then(data => {
+                setRecipes(data)
+
+            const randomIdx = Math.floor(Math.random()*data.length);
+                console.log(randomIdx);
+            setRandomRecipe(data[randomIdx])
+            });
     }, [])
     
+    console.log(randomRecipe);
     return(
             <DarkMode.Provider value = { isDark }>
                 <div className = { className }>
-                    {/* <div>
-                        <h1 className = "title">Recipe Collection</h1>
-                    </div> */}
                     <header>
                         <NavBar 
                         setIsDark={setIsDark} 
@@ -31,12 +36,22 @@ function App() {
                     </header>
                     <main>
                         <RecipesContext.Provider value = { {recipes, setRecipes} }>
+                            {randomRecipe && (
+                                <div className = "random-recipe">
+                                    <img 
+                                        src = { randomRecipe.image }
+                                        alt = { randomRecipe.name }
+                                        width = "750"
+                                        />
+                                        {/* <h2>{ randomRecipe.name }</h2> */}
+                                </div>
+                            )}
                                 <Outlet
                                 context = { baseUrl}
-                                />;
-                        </RecipesContext.Provider>;
-                    </main>;
-                </div>;
+                                />
+                        </RecipesContext.Provider>
+                    </main>
+                </div>
             </DarkMode.Provider>
     )
 };

@@ -21,3 +21,10 @@ header {
   padding: 1em;
   background-color: #333;
 }
+
+.random-recipe {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
