@@ -15,8 +15,6 @@ function Recipe({ recipe }) {
         // image
         } = recipe;
 
-console.log(recipe)
-console.log(name)
 
     return(
         <div 
@@ -24,7 +22,9 @@ console.log(name)
             key = { id }
             >
                 <div className = "photo">
-                    <NavLink to = {"/RecipeList/Recipe/"+id}>
+                    <NavLink 
+                    to = {`/RecipeList/Recipe/${id}`}
+                    >
                     <img 
                         src = { thumb } 
                         alt = { name }
