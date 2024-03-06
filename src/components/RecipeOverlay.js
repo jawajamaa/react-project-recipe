@@ -19,10 +19,11 @@ function RecipeOverlay() {
                 to="/RecipeList"
                 >X</NavLink>
             <div className="content">
-                <div>
-                <span>Here's a Recipe Overlay</span>
+                <div className = "photo">
                 <img src={ foundRecipe.image } width="800" />
                 </div>
+                <h2>{ foundRecipe.name }</h2>
+                <h3>{ foundRecipe.category }</h3> 
             </div>
         </div>
     )

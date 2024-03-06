@@ -1,7 +1,7 @@
 {
   "recipes": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Healthy Fried Rice",
       "category": "Dinner",
       "vegetarian": true,
@@ -12,7 +12,7 @@
       "image": "/images/1560-square/fried-rice-obi-unsplash.jpg"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Baked Oatmeal",
       "category": "Breakfast",
       "vegetarian": true,
@@ -23,7 +23,7 @@
       "image": "/images/1560-square/oatmeal-margarita-zueva-unsplash.jpg"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Roasted Butternut Squash Soup",
       "category": "Dinner",
       "vegetarian": true,
@@ -34,7 +34,7 @@
       "image": "/images/1560-square/bttrnt-sq-soup-jezebel-rose-unsplash.jpg"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Funfetti Cake",
       "category": "Dessert",
       "vegetarian": true,
@@ -45,7 +45,7 @@
       "image": "/images/1560-square/cupcakes-brooke-lark-unsplash.jpg"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Bourbon Granola",
       "category": "Breakfast",
       "vegetarian": true,
@@ -56,7 +56,7 @@
       "image": "/images/1560-square/granola-heather-barnes-unsplash.jpg"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Spiced Granola (Pandemic Remix)",
       "category": "Breakfast",
       "vegetarian": true,
@@ -67,7 +67,7 @@
       "image": "/images/1560-square/granola-heather-barnes-unsplash.jpg"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "No Bake Peanut Butter Bars",
       "category": "Dessert",
       "vegetarian": true,
@@ -78,7 +78,7 @@
       "image": "/images/1560-square/no-bake-chocolate-peanut-butter-bars.jpg"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Peach Cobbler",
       "category": "Dessert",
       "vegetarian": true,
@@ -89,7 +89,7 @@
       "image": "/images/1560-square/peach-cobbler-sarah-brown-unsplash.jpg"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Sauteed Cabbage",
       "category": "Dinner",
       "vegetarian": false,
@@ -100,7 +100,7 @@
       "image": "/images/1560-square/cabbage-arnaldo-aldana-unsplash.jpg"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Tomato Chicken Fajita Curry (Slow Cooker Fajitas)",
       "category": "Dinner",
       "vegetarian": false,
@@ -109,17 +109,6 @@
       "url": "https://fitslowcookerqueen.com/slow-cooker-steak-fajitas/",
       "thumb": "/images/300-square/fajitas-hybrid-storytellers-unsplash-300px.jpg",
       "image": "/images/1560-square/fajitas-hybrid-storytellers-unsplash.jpg"
-    },
-    {
-      "id": "c484",
-      "name": "za",
-      "category": "'za",
-      "vegetarian": "nope",
-      "prepTime": 5,
-      "myPrepTime": 5,
-      "url": "www.pizzahut.com",
-      "thumb": "www.littlecaesars.com",
-      "image": "www.italy.com"
     }
   ]
 }

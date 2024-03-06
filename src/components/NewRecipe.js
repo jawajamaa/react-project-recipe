@@ -56,9 +56,19 @@ function NewRecipe() {
         })
             .then(r => r.json())
             // .then(data => console.log(data))
-            .then(data => setRecipes([
-                ...recipes, data]))
-
+            .then(data => {
+                setRecipes([...recipes, data]);
+                setFormData({
+                    name: "",
+                    category: "",
+                    vegetarian: "", 
+                    prepTime: "", 
+                    myPrepTime: "", 
+                    url: "",
+                    thumb: "",
+                    image: ""
+                });    
+            });
     }
 
 
