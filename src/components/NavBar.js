@@ -4,11 +4,19 @@ import "./NavBar.css";
 import { useContext } from "react";
 import { DarkMode } from "../MyContext";
 
-function NavBar({ setIsDark }) {
+function NavBar({ setIsDark,  onHandleHomeClick, setRandomRecipe }) {
     const isDark = useContext(DarkMode)
 
     function updateDarkMode(evt) {
         setIsDark(evt.target.checked);
+    }
+
+    function handleClick() {
+        setRandomRecipe(null)
+    }
+
+    function handleHomeClick() {
+        onHandleHomeClick();
     }
 
     return(
@@ -25,7 +33,7 @@ function NavBar({ setIsDark }) {
                         <li className = "nav-item">
                             <NavLink
                                 to = "/"
-                                // className = "nav-link"
+                                onClick = { handleHomeClick }
                             >
                                 Home
                             </NavLink>
@@ -33,7 +41,7 @@ function NavBar({ setIsDark }) {
                         <li className = "nav-item">   
                             <NavLink
                                 to = "./RecipeList"
-                                // className = "nav-link"
+                                onClick = { handleClick }
                             >
                                 Recipe List
                             </NavLink>
@@ -41,7 +49,7 @@ function NavBar({ setIsDark }) {
                         <li className = "nav-item">   
                             <NavLink
                                 to = "./NewRecipe"
-                                // className = "nav-link"
+                                onClick = { handleClick }
                             >
                                 Enter New Recipe
                             </NavLink>

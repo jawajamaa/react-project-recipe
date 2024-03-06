@@ -25,13 +25,20 @@ function App() {
             });
     }, [])
     
-    console.log(randomRecipe);
+    function onHandleHomeClick() {
+        const randomIdx = Math.floor(Math.random()*recipes.length);
+        console.log(randomIdx);
+        setRandomRecipe(recipes[randomIdx])
+    }
+
     return(
             <DarkMode.Provider value = { isDark }>
                 <div className = { className }>
                     <header>
                         <NavBar 
-                        setIsDark={setIsDark} 
+                            setIsDark={setIsDark} 
+                            setRandomRecipe = { setRandomRecipe }
+                            onHandleHomeClick = { onHandleHomeClick }
                         />
                     </header>
                     <main>

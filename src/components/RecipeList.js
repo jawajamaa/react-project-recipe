@@ -4,7 +4,6 @@ import "./RecipeList.css";
 import Recipe from "./Recipe";
 import { Outlet } from "react-router-dom";
 
-
 function RecipeList() {
     const isDark = useContext(DarkMode);
     const { recipes } = useContext(RecipesContext)

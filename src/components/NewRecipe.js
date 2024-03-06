@@ -55,7 +55,6 @@ function NewRecipe() {
             })
         })
             .then(r => r.json())
-            // .then(data => console.log(data))
             .then(data => {
                 setRecipes([...recipes, data]);
                 setFormData({
@@ -70,10 +69,6 @@ function NewRecipe() {
                 });    
             });
     }
-
-
-// console.log(recipeObj);
-// console.log(formData);
 
     return(
         <div className = "new-recipe">
