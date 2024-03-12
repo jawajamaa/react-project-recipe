@@ -19,8 +19,8 @@ function App() {
             .then(data => {
                 setRecipes(data)
 
+// Lines 22&23 courtesy Chat GPT 
             const randomIdx = Math.floor(Math.random()*data.length);
-                console.log(randomIdx);
             setRandomRecipe(data[randomIdx])
             });
     }, [])
@@ -43,6 +43,7 @@ function App() {
                     </header>
                     <main>
                         <RecipesContext.Provider value = { {recipes, setRecipes} }>
+                        {/* Lines 47 - 54, excepting line 52, courtesy Chat GPT */}
                             {randomRecipe && (
                                 <div className = "random-recipe">
                                     <img 

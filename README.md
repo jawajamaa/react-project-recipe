@@ -17,3 +17,17 @@ The components that I envision would be App.js as the top of the tree, then a Fo
       |-RecipeOverlay.js
 
 Using the above components, I would use React Router to create client side routes, where App would be Home with the list of receipes, New Recipe would navigate to the NewRecipe component containing the controlled form to submit a new recipe
+
+## Citation
+
+Chat GPT for code snippets noted by comments in code.
+
+Image credit Courtesy Unsplash © Photographers
+
+  Butternut Squash Soup - Jezebel Rose
+  Cabbage - Arnaldo Aldana
+  Cupcakes - Brooke Lark
+  Fajitas - Hybrid Storytellers
+  Fried Rice - Obi
+  Granola - Heather Barnes
+  

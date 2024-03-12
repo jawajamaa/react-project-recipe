@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { DarkMode, RecipesContext } from "../MyContext";
 import "./RecipeList.css";
 import Recipe from "./Recipe";
@@ -8,17 +8,39 @@ function RecipeList() {
     const isDark = useContext(DarkMode);
     const { recipes } = useContext(RecipesContext)
     const className = "recipe-list-" + (isDark ? "dark" : "light");
+    const [isBreakfast, setIsBreakfast] = useState(false);
 
-    console.log(recipes);
+    function handleClick() {
+        setIsBreakfast(!isBreakfast);
+    }
+
+    const showBreakfast = recipes.filter(receipe => {
+        return receipe.category === "Breakfast";
+    })
 
     return(
         <div className = {className}>
+            <div>
+                <button 
+                    className = "button" 
+                    onClick = { handleClick }
+                >
+                    Breakfast!
+                </button>
+            </div>
             <div className = "card-container">
-                {recipes.map(recipe => (
-                    <Recipe 
-                        key = { recipe.id }
-                        recipe = { recipe }
+                {isBreakfast ? 
+                    showBreakfast.map(recipe => (
+                        <Recipe 
+                            key = { recipe.id }
+                            recipe = { recipe }
                         />
+                     )) : 
+                        recipes.map(recipe => (
+                            <Recipe 
+                                key = { recipe.id }
+                                recipe = { recipe }
+                            />
                 ))}
             </div>  
             <Outlet/>  
