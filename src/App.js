@@ -55,7 +55,7 @@ function App() {
                                 </div>
                             )}
                                 <Outlet
-                                context = { baseUrl}
+                                    context = { baseUrl}
                                 />
                         </RecipesContext.Provider>
                     </main>

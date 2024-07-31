@@ -10,9 +10,10 @@ function RecipeList() {
     const className = "recipe-list-" + (isDark ? "dark" : "light");
     const [isBreakfast, setIsBreakfast] = useState(false);
 
-    function handleClick() {
-        setIsBreakfast(!isBreakfast);
-    }
+    // isBreakfast commented out as I will make that a select feature to show items based on Dish category and also add to AddRecipe
+    // function handleClick() {
+    //     setIsBreakfast(!isBreakfast);
+    // }
 
     const showBreakfast = recipes.filter(receipe => {
         return receipe.category === "Breakfast";
@@ -20,14 +21,14 @@ function RecipeList() {
 
     return(
         <div className = {className}>
-            <div>
+            {/* <div>
                 <button 
                     className = "button" 
                     onClick = { handleClick }
                 >
                     Breakfast!
                 </button>
-            </div>
+            </div> */}
             <div className = "card-container">
                 {isBreakfast ? 
                     showBreakfast.map(recipe => (
