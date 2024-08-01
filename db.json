@@ -109,6 +109,17 @@
       "url": "https://fitslowcookerqueen.com/slow-cooker-steak-fajitas/",
       "thumb": "/images/300-square/fajitas-hybrid-storytellers-unsplash-300px.jpg",
       "image": "/images/1560-square/fajitas-hybrid-storytellers-unsplash.jpg"
+    },
+    {
+      "id": "4225",
+      "name": "Brussels Sausage ",
+      "category": "Dinner",
+      "vegetarian": "No",
+      "prepTime": 15,
+      "myPrepTime": 45,
+      "url": "https://docs.google.com/document/d/15Re3AxpqKIKtM7u6dRoPf1-_fICcYNQA-r3mEILdtKo/edit",
+      "thumb": "/images/300-square/brussels-sprouts-jez-timms-unsplash-300px.jpg",
+      "image": "/images/1560-square/brussels-sprouts-jez-timms-unsplash.jpg"
     }
   ]
 }
