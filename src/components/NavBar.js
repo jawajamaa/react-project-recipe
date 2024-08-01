@@ -10,8 +10,8 @@ import { useRecipes } from "../RecipesContext";
 
 function NavBar() {
 // function NavBar({ setIsDark,  onHandleHomeClick, setRandomRecipe }) {
-    const [isDark, setIsDark] = useTheme();
-    const [recipes, setRandomRecipe] = useRecipes();
+    const { isDark, setIsDark } = useTheme();
+    const { recipes, setRandomRecipe } = useRecipes();
 
     function updateDarkMode(evt) {
         // setIsDark(!isDark);
