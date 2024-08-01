@@ -10,7 +10,7 @@
 import React from "react";
 import { ThemeProvider } from "./ThemeContext";
 import { RecipesProvider } from "./RecipesContext";
-import NavBar from "./components/NavBar";
+// import NavBar from "./components/NavBar";
 import { Outlet } from "react-router-dom";
 import "./index.css";
 import "./App.css";
@@ -45,11 +45,11 @@ function App() {
             <ThemeProvider>
                 <RecipesProvider>
                     <div className = "App">
-                        <header>
-                            <NavBar 
-                                // onHandleHomeClick = { onHandleHomeClick }
+                        {/* <header> */}
+                            {/* <NavBar 
+                                onHandleHomeClick = { onHandleHomeClick }
                             />
-                        </header>
+                        </header> */}
                         <main>
                             <Outlet
                                 baseUrl = { baseUrl }

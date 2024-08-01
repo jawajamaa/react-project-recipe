@@ -7,6 +7,7 @@ import { NavLink } from "react-router-dom";
 import React from "react";
 import { useTheme } from "../ThemeContext";
 import { useRecipes } from "../RecipesContext";
+import "./NavBar.css";
 
 function NavBar() {
 // function NavBar({ setIsDark,  onHandleHomeClick, setRandomRecipe }) {

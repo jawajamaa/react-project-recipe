@@ -1,6 +1,7 @@
 import React from "react";
 import { useTheme } from "../ThemeContext";
 import { useRecipes } from "../RecipesContext";
+import NavBar from "./NavBar";
 import "./Home.css";
 
 function Home() {
@@ -11,15 +12,22 @@ function Home() {
     console.log(randomRecipe)
     return(
         <div  className = { className }>
-            {randomRecipe && (
-                <div className = "random-recipe">
-                    <img 
-                        src = { randomRecipe.image }
-                        alt = { randomRecipe.name }
-                        width = "750"
-                        />
-                </div>
-            )}
+            <header>
+                <NavBar 
+                // onHandleHomeClick = { onHandleHomeClick }
+                />
+            </header>
+            <main>
+                {randomRecipe && (
+                    <div className = "random-recipe">
+                        <img 
+                            src = { randomRecipe.image }
+                            alt = { randomRecipe.name }
+                            width = "750"
+                            />
+                    </div>
+                )}
+            </main>
         </div>
     );
 }
