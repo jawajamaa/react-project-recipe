@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { useOutletContext } from "react-router-dom";
-import { RecipesContext } from "../MyContext";
+import { DarkMode, RecipesContext } from "../MyContext";
 
 function NewRecipe() {
     const [formData, setFormData] = useState({ 
@@ -27,6 +27,9 @@ function NewRecipe() {
 
     const baseUrl = useOutletContext();
     const { recipes, setRecipes } = useContext(RecipesContext);
+    const { isDark } = useContext(DarkMode);
+
+    const className = "new-recipe-" + (isDark ? "dark" : "light");
 
     function handleChange(evt) {
         console.log(evt.target.value);
@@ -71,7 +74,7 @@ function NewRecipe() {
     }
 
     return(
-        <div className = "new-recipe">
+        <div className = { className } >
             <form onSubmit = { handleSubmit }>
                 <h2>Enter New Recipe Below</h2>
                 <br />

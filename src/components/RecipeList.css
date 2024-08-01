@@ -1,11 +1,14 @@
-.recipe-list-dark{
+.App-dark{
+    background-color: var(--background-color);
     color: var(--primary-text-color);
-}
-.recipe-list-light{
+  }
+  
+  .App-light{
+    background-color: var(--light-background-color);
     color: var(--secondary-text-color);
-}
+  }
 
-.card-container{
+#card-container{
     max-width: 1250px;
     margin: 0 auto;
     display: flex;
@@ -13,6 +16,15 @@
     justify-content: center;
     gap: 30px;
 }
+
+/* .card-container{
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+} */
 
 /* .button {
     display: flex;

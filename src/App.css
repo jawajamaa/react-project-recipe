@@ -9,11 +9,6 @@
 .App-dark{
   background-color: var(--background-color);
   color: var(--primary-text-color);
-  /* height property causes the dark mode bg to only cover the top screen portion and doesn't move when scrolled; if no height property in app.css, it works, but then landing page and AddRecipe are not styled properly.  Solution: Use Home.js!! (should anyway) so that can be styled separately */
-  width: 100vw;
-  height: 100vh;
-  /* height: max-content; */
-  /* position: sticky; */
 }
 
 .App-light{

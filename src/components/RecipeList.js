@@ -20,7 +20,10 @@ function RecipeList() {
     })
 
     return(
-        <div className = {className}>
+        <div 
+            className = {className}
+            id = "card-container"
+        >
             {/* <div>
                 <button 
                     className = "button" 
@@ -29,7 +32,7 @@ function RecipeList() {
                     Breakfast!
                 </button>
             </div> */}
-            <div className = "card-container">
+            {/* <div className = "card-container"> */}
                 {isBreakfast ? 
                     showBreakfast.map(recipe => (
                         <Recipe 
@@ -43,7 +46,7 @@ function RecipeList() {
                                 recipe = { recipe }
                             />
                 ))}
-            </div>  
+            {/* </div>   */}
             <Outlet/>  
         </div>
     )

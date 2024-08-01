@@ -4,11 +4,13 @@ import "./NavBar.css";
 import { useContext } from "react";
 import { DarkMode } from "../MyContext";
 
-function NavBar({ setIsDark,  onHandleHomeClick, setRandomRecipe }) {
-    const isDark = useContext(DarkMode)
+function NavBar({ onHandleHomeClick, setRandomRecipe }) {
+// function NavBar({ setIsDark,  onHandleHomeClick, setRandomRecipe }) {
+    const { isDark, setIsDark } = useContext(DarkMode)
 
     function updateDarkMode(evt) {
-        setIsDark(evt.target.checked);
+        setIsDark(!isDark);
+        // setIsDark(evt.target.checked);
     }
 
     function handleClick() {
