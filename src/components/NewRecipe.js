@@ -29,7 +29,8 @@ function NewRecipe() {
     const { recipes, setRecipes } = useContext(RecipesContext);
     const { isDark } = useContext(DarkMode);
 
-    const className = "new-recipe-" + (isDark ? "dark" : "light");
+    const className = `new-recipe-${isDark ? "dark" : "light"}`;
+    // const className = "new-recipe-" + (isDark ? "dark" : "light");
 
     function handleChange(evt) {
         console.log(evt.target.value);

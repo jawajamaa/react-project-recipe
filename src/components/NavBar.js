@@ -1,16 +1,21 @@
+// import { NavLink } from "react-router-dom";
+// import "../index.css";
+// import "./NavBar.css";
+// import { useContext } from "react";
+// import { DarkMode } from "../MyContext";
 import { NavLink } from "react-router-dom";
-import "../index.css";
-import "./NavBar.css";
-import { useContext } from "react";
-import { DarkMode } from "../MyContext";
+import React from "react";
+import { useTheme } from "../ThemeContext";
+import { useRecipes } from "../RecipesContext";
 
-function NavBar({ onHandleHomeClick, setRandomRecipe }) {
+function NavBar() {
 // function NavBar({ setIsDark,  onHandleHomeClick, setRandomRecipe }) {
-    const { isDark, setIsDark } = useContext(DarkMode)
+    const [isDark, setIsDark] = useTheme();
+    const [recipes, setRandomRecipe] = useRecipes();
 
     function updateDarkMode(evt) {
-        setIsDark(!isDark);
-        // setIsDark(evt.target.checked);
+        // setIsDark(!isDark);
+        setIsDark(evt.target.checked);
     }
 
     function handleClick() {
@@ -18,8 +23,18 @@ function NavBar({ onHandleHomeClick, setRandomRecipe }) {
     }
 
     function handleHomeClick() {
-        onHandleHomeClick();
+        const randomIdx = Math.floor(Math.random()*recipes.length);
+        console.log(randomIdx);
+        setRandomRecipe(recipes[randomIdx])
     }
+    // function handleHomeClick() {
+    //     onHandleHomeClick();
+    // }
+    // function onHandleHomeClick() {
+    //     const randomIdx = Math.floor(Math.random()*recipes.length);
+    //     console.log(randomIdx);
+    //     setRandomRecipe(recipes[randomIdx])
+    // }
 
     return(
         <header className = "header">
