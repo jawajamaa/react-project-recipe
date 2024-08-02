@@ -8,11 +8,12 @@ function Home() {
     const { isDark } = useTheme();
     const { randomRecipe } = useRecipes();
     const className = `home-${isDark ? "dark" : "light"}`;
+    const headerOfClass = `header-${isDark ? "dark" : "light"}`;
 
     console.log(randomRecipe)
     return(
         <div  className = { className }>
-            <header>
+            <header className = { headerOfClass }>
                 <NavBar 
                 // onHandleHomeClick = { onHandleHomeClick }
                 />

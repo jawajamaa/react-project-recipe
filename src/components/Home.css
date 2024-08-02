@@ -18,8 +18,18 @@
     height: 100vh;
   }
 
-  /* header {
+  .header-dark{
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+  }
+  
+  .header-light{
+    background-color: var(--light-background-color);
+    color: var(--secondary-text-color);
+  }
+
+  .header {
     width: 100%;
     padding: 1em;
-    background-color: #333;
-  } */
+    /* background-color: #333; */
+  }
