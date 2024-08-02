@@ -1,6 +1,6 @@
 .App {
-  width: 100vh;
-  height: 100vh;
+  /* width: 100vh;
+  height: 100vh; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -9,6 +9,8 @@
 .App-dark{
   background-color: var(--background-color);
   color: var(--primary-text-color);
+  width: 100vw;
+  height: 100vh;
 }
 
 .App-light{

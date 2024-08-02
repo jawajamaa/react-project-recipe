@@ -1,13 +1,15 @@
-import { useContext, useState } from "react";
-import { DarkMode, RecipesContext } from "../MyContext";
-import "./RecipeList.css";
-import Recipe from "./Recipe";
+import { useState } from "react";
+// import { DarkMode, RecipesContext } from "../MyContext";
+import { useTheme } from "../ThemeContext";
+import { useRecipes } from "../RecipesContext";
 import { Outlet } from "react-router-dom";
+import Recipe from "./Recipe";
+import "./RecipeList.css";
 
 function RecipeList() {
-    const isDark = useContext(DarkMode);
-    const { recipes } = useContext(RecipesContext)
-    const className = "recipe-list-" + (isDark ? "dark" : "light");
+    const { isDark } = useTheme();
+    const { recipes } = useRecipes();
+    const className = `recipe-list-${isDark ? "dark" : "light"}`;
     const [isBreakfast, setIsBreakfast] = useState(false);
 
     // isBreakfast commented out as I will make that a select feature to show items based on Dish category and also add to AddRecipe
@@ -47,7 +49,7 @@ function RecipeList() {
                             />
                 ))}
             {/* </div>   */}
-            <Outlet/>  
+            {/* <Outlet/>   */}
         </div>
     )
 };

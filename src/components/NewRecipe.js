@@ -1,6 +1,8 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { useOutletContext } from "react-router-dom";
-import { DarkMode, RecipesContext } from "../MyContext";
+import { useTheme } from "../ThemeContext";
+import { useRecipes } from "../RecipesContext";
+import "./NewRecipe.css";
 
 function NewRecipe() {
     const [formData, setFormData] = useState({ 
@@ -26,11 +28,10 @@ function NewRecipe() {
         } = formData;
 
     const baseUrl = useOutletContext();
-    const { recipes, setRecipes } = useContext(RecipesContext);
-    const { isDark } = useContext(DarkMode);
+    const { isDark } = useTheme();
+    const { recipes, setRecipes } = useRecipes();
 
     const className = `new-recipe-${isDark ? "dark" : "light"}`;
-    // const className = "new-recipe-" + (isDark ? "dark" : "light");
 
     function handleChange(evt) {
         console.log(evt.target.value);
