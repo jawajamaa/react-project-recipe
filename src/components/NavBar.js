@@ -13,7 +13,9 @@ function NavBar() {
 // function NavBar({ setIsDark,  onHandleHomeClick, setRandomRecipe }) {
     const { isDark, setIsDark } = useTheme();
     const { recipes, setRandomRecipe } = useRecipes();
-
+    const headerOfClass = `header-${isDark ? "dark" : "light"}`;
+    const navItemClass = `nav-item-${isDark ? "dark" : "light"}`;
+    
     function updateDarkMode(evt) {
         // setIsDark(!isDark);
         setIsDark(evt.target.checked);
@@ -38,7 +40,7 @@ function NavBar() {
     // }
 
     return(
-        <header className = "header">
+        <header className = { headerOfClass }>
             <div>
                 <h1 className = "title">Recipe Collection</h1>
             </div>
@@ -48,7 +50,8 @@ function NavBar() {
                     id = "nav-menu"
                 >
                     <ul className = "nav-list">
-                        <li className = "nav-item">
+                        {/* <li className = "nav-item"> */}
+                        <li className = { navItemClass }>
                             <NavLink
                                 to = "/"
                                 onClick = { handleHomeClick }
@@ -56,7 +59,8 @@ function NavBar() {
                                 Home
                             </NavLink>
                         </li>
-                        <li className = "nav-item">   
+                        {/* <li className = "nav-item">    */}
+                        <li className = { navItemClass }>   
                             <NavLink
                                 to = "./RecipeList"
                                 onClick = { handleClick }
@@ -64,7 +68,8 @@ function NavBar() {
                                 Recipe List
                             </NavLink>
                         </li>   
-                        <li className = "nav-item">   
+                        {/* <li className = "nav-item">    */}
+                        <li className = { navItemClass }>   
                             <NavLink
                                 to = "./NewRecipe"
                                 onClick = { handleClick }
