@@ -1,6 +1,4 @@
 .App {
-  /* width: 100vh;
-  height: 100vh; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -20,11 +18,10 @@
   height: 100vh;
 }
 
-/* header {
+header {
   width: 100%;
   padding: 1em;
-  background-color: #333;
-} */
+}
 
 .random-recipe {
   display: flex;

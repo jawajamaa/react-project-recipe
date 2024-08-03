@@ -1,8 +1,3 @@
-// import { NavLink } from "react-router-dom";
-// import "../index.css";
-// import "./NavBar.css";
-// import { useContext } from "react";
-// import { DarkMode } from "../MyContext";
 import { NavLink } from "react-router-dom";
 import React from "react";
 import { useTheme } from "../ThemeContext";
@@ -10,14 +5,13 @@ import { useRecipes } from "../RecipesContext";
 import "./NavBar.css";
 
 function NavBar() {
-// function NavBar({ setIsDark,  onHandleHomeClick, setRandomRecipe }) {
     const { isDark, setIsDark } = useTheme();
     const { recipes, setRandomRecipe } = useRecipes();
     const headerOfClass = `header-${isDark ? "dark" : "light"}`;
     const navItemClass = `nav-item-${isDark ? "dark" : "light"}`;
+    const titleClass = `title-${isDark ? "dark" : "light"}`;
     
     function updateDarkMode(evt) {
-        // setIsDark(!isDark);
         setIsDark(evt.target.checked);
     }
 
@@ -30,19 +24,17 @@ function NavBar() {
         console.log(randomIdx);
         setRandomRecipe(recipes[randomIdx])
     }
-    // function handleHomeClick() {
-    //     onHandleHomeClick();
-    // }
-    // function onHandleHomeClick() {
-    //     const randomIdx = Math.floor(Math.random()*recipes.length);
-    //     console.log(randomIdx);
-    //     setRandomRecipe(recipes[randomIdx])
-    // }
 
     return(
         <header className = { headerOfClass }>
             <div>
-                <h1 className = "title">Recipe Collection</h1>
+                <NavLink>
+                <h1 className = { titleClass }
+                    to = "/"
+                    onClick = { handleHomeClick }
+                >
+                    Recipe Collection</h1>
+                </NavLink>
             </div>
             <nav className = "nav-container">
                 <div 
@@ -50,7 +42,6 @@ function NavBar() {
                     id = "nav-menu"
                 >
                     <ul className = "nav-list">
-                        {/* <li className = "nav-item"> */}
                         <li className = { navItemClass }>
                             <NavLink
                                 to = "/"
@@ -59,7 +50,6 @@ function NavBar() {
                                 Home
                             </NavLink>
                         </li>
-                        {/* <li className = "nav-item">    */}
                         <li className = { navItemClass }>   
                             <NavLink
                                 to = "./RecipeList"
@@ -68,7 +58,6 @@ function NavBar() {
                                 Recipe List
                             </NavLink>
                         </li>   
-                        {/* <li className = "nav-item">    */}
                         <li className = { navItemClass }>   
                             <NavLink
                                 to = "./NewRecipe"

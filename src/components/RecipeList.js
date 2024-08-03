@@ -1,8 +1,6 @@
-import { useState } from "react";
-// import { DarkMode, RecipesContext } from "../MyContext";
+import React, { useState } from "react";
 import { useTheme } from "../ThemeContext";
 import { useRecipes } from "../RecipesContext";
-import { Outlet } from "react-router-dom";
 import Recipe from "./Recipe";
 import "./RecipeList.css";
 
@@ -34,7 +32,6 @@ function RecipeList() {
                     Breakfast!
                 </button>
             </div> */}
-            {/* <div className = "card-container"> */}
                 {isBreakfast ? 
                     showBreakfast.map(recipe => (
                         <Recipe 
@@ -48,7 +45,6 @@ function RecipeList() {
                                 recipe = { recipe }
                             />
                 ))}
-            {/* </div>   */}
             {/* <Outlet/>   */}
         </div>
     )

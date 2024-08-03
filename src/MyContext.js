@@ -1,4 +1,4 @@
-import { createContext } from "react";
+// import { createContext } from "react";
 
-export const DarkMode = createContext(true);
-export const RecipesContext = createContext([]);
+// export const DarkMode = createContext(true);
+// export const RecipesContext = createContext([]);
