@@ -1,14 +1,19 @@
-import { useContext } from "react";
+import React from "react";
 import { NavLink, useParams} from "react-router-dom";
-import { RecipesContext } from "../MyContext";
+// import { useTheme } from "../ThemeContext";
+import { useRecipes } from "../RecipesContext";
 import "./RecipeOverlay.css";
 
 function RecipeOverlay() {
-    const { recipes } = useContext(RecipesContext);
+    // const { recipes } = useContext(RecipesContext);
+    const { recipes } = useRecipes();
     const { id } = useParams();
 
+    console.log(id)
+    console.log(recipes)
     const foundRecipe = recipes.find(recipe => recipe.id === id)
-
+    
+    console.log(foundRecipe)
     return(
         <div className = "overlay">
             <NavLink 

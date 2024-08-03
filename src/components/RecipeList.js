@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { Outlet } from "react-router-dom";
 import { useTheme } from "../ThemeContext";
 import { useRecipes } from "../RecipesContext";
 import Recipe from "./Recipe";
+// import RecipeOverlay from "./RecipeOverlay";
 import "./RecipeList.css";
 
 function RecipeList() {
@@ -45,7 +47,7 @@ function RecipeList() {
                                 recipe = { recipe }
                             />
                 ))}
-            {/* <Outlet/>   */}
+            <Outlet/>  
         </div>
     )
 };
