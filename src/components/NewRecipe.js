@@ -78,38 +78,36 @@ function NewRecipe() {
     return(
         <div className = { className } >
             <form onSubmit = { handleSubmit }>
-                <h2>Enter New Recipe Below</h2>
-                <br />
-                <ul>
-                    <li>
-                        <label>Enter name of dish</label><input 
+                <div className = "form-box">
+                    <h2>Enter New Recipe</h2>
+                    <br />
+                    <div>
+                        <label>Enter name of dish</label>
+                        <input 
                             type = "text"
                             name = "name"
                             placeholder = "Enter name of dish"
                             value = { name }
                             onChange = { handleChange } 
                         />
-                    </li>
-                    <li>
-                        <label>Dish Category</label><input 
+                        <label>Dish Category</label>
+                        <input 
                             type = "text"
                             name = "category"
                             placeholder = "Dish Category"
                             value = { category }
                             onChange = { handleChange }
                         />
-                    </li>
-                    <li>
-                        <label>Is the dish vegetarian?</label><input 
+                        <label>Is the dish vegetarian?</label>
+                        <input 
                             type = "text"
                             name = "vegetarian"
                             placeholder = "Please enter Yes or No"
                             value = { vegetarian }
                             onChange = { handleChange }
                         />
-                    </li>
-                    <li>
-                        <label>Total Prep Time</label><input 
+                        <label>Total Prep Time</label>
+                        <input 
                             type = "text"
                             name = "prepTime"
                             step = "001"
@@ -117,47 +115,43 @@ function NewRecipe() {
                             value = { prepTime }
                             onChange = { handleChange }
                         />
-                    </li>
-                    <li>
-                        <label>Total Prep Time it takes You</label><input 
+                        <label>Total Prep Time it takes You</label>
+                        <input 
                             type = "text"
                             name = "myPrepTime"
                             placeholder = "enter a number of minutes"
                             value = { myPrepTime }
                             onChange = { handleChange }
                         />
-                    </li>
-                    <li>
-                        <label>Is there a website for this Recipe?</label><input 
+                        <label>Is there a website for this Recipe?</label>
+                        <input 
                             type = "text"
                             name = "url"
                             placeholder = "enter url of website"
                             value = { url }
                             onChange = { handleChange }
                         />
-                    </li>
-                    <li>
-                        <label>Small (300px square) Image</label><input 
+                        <label>Small (300px square) Image</label>
+                        <input 
                             type = "text"
                             name = "thumb"
                             placeholder = "enter url of image"
                             value = { thumb }
                             onChange = { handleChange }
                         />
-                    </li>
-                    <li>
-                        <label>Large Image</label><input 
+                        <label>Large Image</label>
+                        <input 
                             type = "text"
                             name = "image"
                             placeholder = "enter url of large image"
                             value = { image }
                             onChange = { handleChange }
                         />
-                    </li>
-                    <button
-                    type = "submit"
-                    >Add Recipe</button>
-                </ul>
+                        <button
+                        type = "submit"
+                        >Add Recipe</button>
+                    </div>
+                </div>
             </form>
         </div>
     )
