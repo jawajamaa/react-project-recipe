@@ -79,10 +79,10 @@ function NewRecipe() {
         <div className = { className } >
             <form onSubmit = { handleSubmit }>
                 <div className = "form-box">
-                    <h2>Enter New Recipe</h2>
-                    <br />
                     <div>
-                        <label>Enter name of dish</label>
+                        <h2>Enter New Recipe</h2>
+                        <br />
+                        <label>Enter name of dish
                         <input 
                             type = "text"
                             name = "name"
@@ -90,7 +90,8 @@ function NewRecipe() {
                             value = { name }
                             onChange = { handleChange } 
                         />
-                        <label>Dish Category</label>
+                        </label>
+                        <label>Dish Category
                         <input 
                             type = "text"
                             name = "category"
@@ -98,7 +99,8 @@ function NewRecipe() {
                             value = { category }
                             onChange = { handleChange }
                         />
-                        <label>Is the dish vegetarian?</label>
+                        </label>
+                        <label>Is the dish vegetarian?
                         <input 
                             type = "text"
                             name = "vegetarian"
@@ -106,7 +108,8 @@ function NewRecipe() {
                             value = { vegetarian }
                             onChange = { handleChange }
                         />
-                        <label>Total Prep Time</label>
+                        </label>
+                        <label>Total Prep Time
                         <input 
                             type = "text"
                             name = "prepTime"
@@ -115,7 +118,8 @@ function NewRecipe() {
                             value = { prepTime }
                             onChange = { handleChange }
                         />
-                        <label>Total Prep Time it takes You</label>
+                        </label>
+                        <label>Total Prep Time it takes You
                         <input 
                             type = "text"
                             name = "myPrepTime"
@@ -123,7 +127,8 @@ function NewRecipe() {
                             value = { myPrepTime }
                             onChange = { handleChange }
                         />
-                        <label>Is there a website for this Recipe?</label>
+                        </label>
+                        <label>Is there a website for this Recipe?
                         <input 
                             type = "text"
                             name = "url"
@@ -131,7 +136,8 @@ function NewRecipe() {
                             value = { url }
                             onChange = { handleChange }
                         />
-                        <label>Small (300px square) Image</label>
+                        </label>
+                        <label>Small (300px square) Image
                         <input 
                             type = "text"
                             name = "thumb"
@@ -139,7 +145,8 @@ function NewRecipe() {
                             value = { thumb }
                             onChange = { handleChange }
                         />
-                        <label>Large Image</label>
+                        </label>
+                        <label>Large Image
                         <input 
                             type = "text"
                             name = "image"
@@ -147,6 +154,7 @@ function NewRecipe() {
                             value = { image }
                             onChange = { handleChange }
                         />
+                        </label>
                         <button
                         type = "submit"
                         >Add Recipe</button>
