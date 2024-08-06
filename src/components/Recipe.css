@@ -23,11 +23,21 @@
 }
 
 .extLinkBtn {
-    background-color: var(--toggle-bg);
+    background-color: var(--light-background-color);
+    color: var(--secondary-text-color);
+    border: none;
+    padding: 2px 7px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
     margin-top: 1rem;
+    border-radius: 5px;
     transition: background-color 0.3s;
 }
 
 .extLinkBtn:hover {
     background-color: var(--accent-color);
+    cursor: pointer;
 }

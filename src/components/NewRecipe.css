@@ -53,9 +53,9 @@
 }
 
 .myButton-dark{
-    background-color: var(--toggle-bg);
+    background-color: var(--primary-text-color);
     border: none;
-    color: var(--primary-text-color);
+    color: var(--secondary-text-color);
     padding: 8px 27px;
     border-radius: 5px;
     text-align: center;
@@ -65,7 +65,7 @@
 }
 
 .myButton-light{
-    background-color: var(--toggle-bg);
+    background-color: var(--secondary-text-color);;
     border: none;
     color: var(--primary-text-color);
     padding: 8px 27px;
@@ -79,11 +79,13 @@
 .myButton-dark:hover{
     background-color: var(--accent-color);
     color: var(--primary-text-color);
+    cursor: pointer;
 }
 
 .myButton-light:hover{
     background-color: var(--accent-color);
     color: var(--primary-text-color);
+    cursor: pointer;
 }
 
 /* .new-recipe{
