@@ -32,9 +32,10 @@ function NewRecipe() {
     const { recipes, setRecipes } = useRecipes();
 
     const className = `new-recipe-${isDark ? "dark" : "light"}`;
+    const buttonClass = `myButton-${isDark ? "dark" : "light"}`;
 
     function handleChange(evt) {
-        console.log(evt.target.value);
+        // console.log(evt.target.value);
         setFormData({
             ...formData,
             [evt.target.name]: evt.target.value
@@ -156,8 +157,11 @@ function NewRecipe() {
                         />
                         </label>
                         <button
-                        type = "submit"
-                        >Add Recipe</button>
+                            className = { buttonClass }
+                            type = "submit"
+                        >
+                            Add Recipe
+                        </button>
                     </div>
                 </div>
             </form>

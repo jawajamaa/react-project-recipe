@@ -52,6 +52,40 @@
     font-size: 14px;
 }
 
+.myButton-dark{
+    background-color: var(--toggle-bg);
+    border: none;
+    color: var(--primary-text-color);
+    padding: 8px 27px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.myButton-light{
+    background-color: var(--toggle-bg);
+    border: none;
+    color: var(--primary-text-color);
+    padding: 8px 27px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.myButton-dark:hover{
+    background-color: var(--accent-color);
+    color: var(--primary-text-color);
+}
+
+.myButton-light:hover{
+    background-color: var(--accent-color);
+    color: var(--primary-text-color);
+}
+
 /* .new-recipe{
     padding: 1rem;
     display: flex;
