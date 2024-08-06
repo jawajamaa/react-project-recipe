@@ -82,7 +82,7 @@ function NewRecipe() {
                     <div>
                         <h2>Enter New Recipe</h2>
                         <br />
-                        <label>Enter name of dish
+                        <label>Enter name of dish:  
                         <input 
                             type = "text"
                             name = "name"
@@ -91,7 +91,7 @@ function NewRecipe() {
                             onChange = { handleChange } 
                         />
                         </label>
-                        <label>Dish Category
+                        <label>Dish Category:
                         <input 
                             type = "text"
                             name = "category"
@@ -109,7 +109,7 @@ function NewRecipe() {
                             onChange = { handleChange }
                         />
                         </label>
-                        <label>Total Prep Time
+                        <label>Total Prep Time:
                         <input 
                             type = "text"
                             name = "prepTime"
@@ -119,7 +119,7 @@ function NewRecipe() {
                             onChange = { handleChange }
                         />
                         </label>
-                        <label>Total Prep Time it takes You
+                        <label>Total Prep Time it takes You: 
                         <input 
                             type = "text"
                             name = "myPrepTime"
@@ -128,7 +128,7 @@ function NewRecipe() {
                             onChange = { handleChange }
                         />
                         </label>
-                        <label>Is there a website for this Recipe?
+                        <label>Website for this Recipe?
                         <input 
                             type = "text"
                             name = "url"
@@ -137,7 +137,7 @@ function NewRecipe() {
                             onChange = { handleChange }
                         />
                         </label>
-                        <label>Small (300px square) Image
+                        <label>Small (300px square) Image -
                         <input 
                             type = "text"
                             name = "thumb"
@@ -146,7 +146,7 @@ function NewRecipe() {
                             onChange = { handleChange }
                         />
                         </label>
-                        <label>Large Image
+                        <label>Large Image -
                         <input 
                             type = "text"
                             name = "image"
