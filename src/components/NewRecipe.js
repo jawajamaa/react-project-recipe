@@ -3,6 +3,7 @@ import { useOutletContext } from "react-router-dom";
 import { useTheme } from "../ThemeContext";
 import { useRecipes } from "../RecipesContext";
 import Dropdown from "./Dropdown/Dropdown";
+import DropdownItem from "./Dropdown/DropdownItem";
 import "./NewRecipe.css";
 
 function NewRecipe() {
@@ -98,7 +99,15 @@ function NewRecipe() {
                         <div className = "dropdown">
                             <Dropdown 
                                 buttonText = "Select Recipe Category"
-                                content = {<p>Hello World!!</p>}
+                                content = {
+                                    <>
+                                        {foodCategories.map(meal => (
+                                            <DropdownItem key={meal}>
+                                                {meal}
+                                            </DropdownItem>
+                                        ))}
+                                    </>
+                                }
                             />
                         </div>
                         {/* <label>Dish Category:

@@ -1,9 +1,15 @@
 import React from "react";
+import "./DropdownItem.css";
 
-function DropdownItem() {
+function DropdownItem({ children, onClick }) {
 
     return(
-        <div>DropdownItem</div>
+        <div 
+            className = "dropdown-item"
+            onClick = { onClick }
+        >
+            { children }
+        </div>
     )
 };
 export default DropdownItem;

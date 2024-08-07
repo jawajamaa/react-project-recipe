@@ -1,13 +1,13 @@
 import React from "react";
 import "./DropdownContent.css";
 
-function DropdownContent({ content }) {
+function DropdownContent({ content, open }) {
 
     // console.log(children)
     console.log(content)
 
     return(
-        <div className = "dropdown-content">
+        <div className = {`dropdown-content ${open ? "content-open" : null}`}>
             { content }
         </div>
     )
