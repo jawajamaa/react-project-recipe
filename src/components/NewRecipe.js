@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useOutletContext } from "react-router-dom";
 import { useTheme } from "../ThemeContext";
 import { useRecipes } from "../RecipesContext";
+import Dropdown from "./Dropdown/Dropdown";
 import "./NewRecipe.css";
 
 function NewRecipe() {
@@ -76,6 +77,8 @@ function NewRecipe() {
             });
     }
 
+    const foodCategories = ["Appetizer", "Breakfast", "Desert", "Dinner", "Lunch", "Snack"]
+
     return(
         <div className = { className } >
             <form onSubmit = { handleSubmit }>
@@ -92,7 +95,13 @@ function NewRecipe() {
                             onChange = { handleChange } 
                         />
                         </label>
-                        <label>Dish Category:
+                        <div className = "dropdown">
+                            <Dropdown 
+                                buttonText = "Select Recipe Category"
+                                content = {<p>Hello World!!</p>}
+                            />
+                        </div>
+                        {/* <label>Dish Category:
                         <input 
                             type = "text"
                             name = "category"
@@ -100,7 +109,7 @@ function NewRecipe() {
                             value = { category }
                             onChange = { handleChange }
                         />
-                        </label>
+                        </label> */}
                         <label>Is the dish vegetarian?
                         <input 
                             type = "text"
