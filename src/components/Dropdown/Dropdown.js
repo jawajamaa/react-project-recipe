@@ -6,9 +6,11 @@ function Dropdown({ buttonText, content }) {
     const [open, setOpen] = useState(false);
 
     const dropdownRef = useRef();
-    // console.log(`${buttonText}`)
-    // console.log(buttonText)
-    // console.log(content)
+
+    console.log(`${buttonText}`)
+    console.log(buttonText)
+    console.log(content)
+    
     const toggleDropdown = () => {
         setOpen((open) => !open);
     };

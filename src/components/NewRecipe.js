@@ -98,6 +98,7 @@ function NewRecipe() {
                         </label>
                         <div className = "dropdown">
                             <Dropdown 
+                                // buttonText = "Select"
                                 buttonText = "Select Recipe Category"
                                 content = {
                                     <>
