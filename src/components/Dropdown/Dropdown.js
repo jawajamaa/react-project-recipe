@@ -23,12 +23,12 @@ function Dropdown({ buttonText, content }) {
             ) {
                 setOpen(false);
             }
+        };
 
-            document.addEventListener("click", clickHandler)
+        document.addEventListener("click", clickHandler)
 
-            return () => {
-                document.removeEventListener("click", clickHandler);
-            }
+        return () => {
+            document.removeEventListener("click", clickHandler);
         };
     }, [dropdownRef])
     
