@@ -1,20 +1,20 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { useTheme } from "../../ThemeContext";
 import "./DropdownButton.css";
 
-function DropdownButton({ buttonText, children, open, toggleDropdown }) {
+const DropdownButton = forwardRef(({ buttonText, open, toggleDropdown }, ref) => {
+// function DropdownButton({ buttonText, open, ref, toggleDropdown }) {
     const { isDark } = useTheme();
     const dropdownIconClass = `dropdown-icon-${isDark ? "dark" : "light"}`;
     const dropdownBtnClass = `dropdown-btn-${isDark ? "dark" : "light"}`;
 
-    console.log(children)
-    console.log(buttonText)
     return(
         <div className = { dropdownBtnClass } >
             <div 
                 onClick = { toggleDropdown }
-                className = {`dropdown-btn ${open ? "button-open" : null}`} 
+                className = {`dropdown-btn ${open ? "button-open" : null}`}
+                ref = { ref } 
             >
                 { buttonText }
                 {/* { children } */}
@@ -25,6 +25,6 @@ function DropdownButton({ buttonText, children, open, toggleDropdown }) {
             </div>
         </div>
     );
-};
+});
 
 export default DropdownButton;

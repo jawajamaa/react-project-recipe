@@ -6,10 +6,8 @@ function Dropdown({ buttonText, content }) {
     const [open, setOpen] = useState(false);
 
     const dropdownRef = useRef();
-
-    console.log(`${buttonText}`)
-    console.log(buttonText)
-    console.log(content)
+    const buttonRef = useRef();
+    const contentRef = useRef();
     
     const toggleDropdown = () => {
         setOpen((open) => !open);
@@ -17,20 +15,18 @@ function Dropdown({ buttonText, content }) {
 
     useEffect(() => {
         const clickHandler = (e) => {
-            if(dropdownRef.current &&
-                !dropdownRef.current.contains
-                (e.target)
+            if(dropdownRef.current && !dropdownRef.current.contains(e.target)
             ) {
                 setOpen(false);
             }
         };
 
-        document.addEventListener("click", clickHandler)
+        document.addEventListener("click", clickHandler);
 
         return () => {
             document.removeEventListener("click", clickHandler);
         };
-    }, [dropdownRef])
+    }, [dropdownRef]);
     
     return(
         <div 
@@ -40,15 +36,16 @@ function Dropdown({ buttonText, content }) {
             <DropdownButton
                 toggleDropdown = { toggleDropdown } 
                 open = { open } 
-                // { ...buttonText } no dropdown fields shown using this method, but looks cleaner.  errors when not using ...
                 buttonText = { buttonText }
+                ref = { buttonRef }
             />
             <DropdownContent 
                 open = { open }
-                // { ...content }
                 content = { content }
+                ref = { contentRef }
             />
-            </div>
+        </div>
     )
 };
+
 export default Dropdown;
