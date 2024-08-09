@@ -2,7 +2,7 @@ import { createContext, useContext, useState } from "react";
 
 const BaseUrlContext = createContext();
 
-export function BaseUrlProvider() {
+export function BaseUrlProvider({ children }) {
     const [baseUrl, setBaseUrl] = useState("http://localhost:4000/recipes/");
 
     return(

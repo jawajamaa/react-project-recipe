@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { useOutletContext } from "react-router-dom";
-import { useTheme } from "../ThemeContext";
+// import { useOutletContext } from "react-router-dom";
+import { useBaseUrl } from "../BaseUrlContext";
 import { useRecipes } from "../RecipesContext";
+import { useTheme } from "../ThemeContext";
 import Dropdown from "./Dropdown/Dropdown";
 import DropdownItem from "./Dropdown/DropdownItem";
 import "./NewRecipe.css";
@@ -29,7 +30,8 @@ function NewRecipe() {
         image
         } = formData;
 
-    const baseUrl = useOutletContext();
+    const { baseUrl } = useBaseUrl();
+    // const baseUrl = useOutletContext();
     const { isDark } = useTheme();
     const { recipes, setRecipes } = useRecipes();
 
@@ -46,6 +48,8 @@ function NewRecipe() {
 
     function handleSubmit(evt) {
         evt.preventDefault();
+        console.log(evt)
+        console.log(baseUrl)
         fetch(baseUrl, {
             method: "POST",
             headers: {
@@ -80,8 +84,12 @@ function NewRecipe() {
 
     const foodCategories = ["Appetizer", "Breakfast", "Desert", "Dinner", "Lunch", "Snack"]
 
-    function onHandleClick(children) {
-        console.log(children)
+    function onHandleClick(selectedCategory) {
+        console.log(selectedCategory)
+        setFormData({
+            ...formData,
+            "category": selectedCategory
+        });
 
     }
 
@@ -101,24 +109,29 @@ function NewRecipe() {
                             onChange = { handleChange } 
                         />
                         </label>
-                        <div className = "dropdown">
-                            <Dropdown 
-                                // buttonText = "Select"
-                                buttonText = "Select Recipe Category"
-                                content = {
-                                    <>
-                                        {foodCategories.map(meal => (
-                                            <DropdownItem 
-                                                key = { meal }
-                                                onHandleClick = { onHandleClick }
-                                                >
-                                                {meal}
-                                            </DropdownItem>
-                                        ))}
-                                    </>
-                                }
-                            />
-                        </div>
+                        <label>Select Recipe Category
+                            <div className = "dropdown">
+                                <Dropdown 
+                                    buttonText = {!category ? "Select One" : category}
+                                    // buttonText = "Select One"
+                                    content = {
+                                        <>
+                                            {foodCategories.map(meal => (
+                                                <DropdownItem 
+                                                    key = { meal }
+                                                    onHandleClick = { onHandleClick }
+                                                    >
+                                                    {meal}
+                                                </DropdownItem>
+                                            ))}
+                                        </>
+                                    }
+                                />
+                            </div>
+                            {/* <input>
+                                value = { category }>
+                            </input> */}
+                        </label>
                         {/* <label>Dish Category:
                         <input 
                             type = "text"
