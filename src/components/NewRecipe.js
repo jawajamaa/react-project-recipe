@@ -80,6 +80,11 @@ function NewRecipe() {
 
     const foodCategories = ["Appetizer", "Breakfast", "Desert", "Dinner", "Lunch", "Snack"]
 
+    function onHandleClick(children) {
+        console.log(children)
+
+    }
+
     return(
         <div className = { className } >
             <form onSubmit = { handleSubmit }>
@@ -103,7 +108,10 @@ function NewRecipe() {
                                 content = {
                                     <>
                                         {foodCategories.map(meal => (
-                                            <DropdownItem key={meal}>
+                                            <DropdownItem 
+                                                key = { meal }
+                                                onHandleClick = { onHandleClick }
+                                                >
                                                 {meal}
                                             </DropdownItem>
                                         ))}
