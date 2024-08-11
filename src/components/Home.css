@@ -1,14 +1,8 @@
-/* #home{
-    position: absolute;
-} */
-
 .home-dark{
     background-color: var(--background-color);
     color: var(--primary-text-color);
     width: 100vw;
     height: 100vh;
-    /* height: max-content; */
-    /* position: sticky; */
   }
   
   .home-light{
@@ -31,6 +25,4 @@
   .header {
     width: 100%;
     padding: 1em;
-    /* position: absolute; */
-    /* background-color: #333; */
   }

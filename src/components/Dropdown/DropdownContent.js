@@ -2,10 +2,6 @@ import React, { forwardRef } from "react";
 import "./DropdownContent.css";
 
 const DropdownContent = forwardRef(({ content, dropdownTop, open }, ref) => {
-// function DropdownContent({ content, ref, open }) {
-
-    // console.log(children)
-    // console.log(content)
 
     return(
         <div 

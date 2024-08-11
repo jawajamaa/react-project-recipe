@@ -63,7 +63,7 @@ function NavBar() {
                                 to = "./NewRecipe"
                                 onClick = { handleClick }
                             >
-                                Enter New Recipe
+                                Add Recipe
                             </NavLink>
                         </li> 
                     </ul>
