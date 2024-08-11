@@ -27,8 +27,12 @@ function RecipeOverlay() {
                     alt = { foundRecipe.name }
                     />
                 </div>
-                <h2>{ foundRecipe.name }</h2>
-                <h3>{ foundRecipe.category }</h3> 
+                <div>
+                    <h2>{ foundRecipe.name }</h2>
+                    <p>{ "_____________________" }</p> 
+                    <p>Category: { foundRecipe.category }</p> 
+                    <p>Prep time: { foundRecipe.myPrepTime } minutes</p> 
+                </div>
             </div>
         </div>
     )

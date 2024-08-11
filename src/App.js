@@ -7,8 +7,6 @@ import { Outlet } from "react-router-dom";
 import "./index.css";
 import "./App.css";
 
-// const baseUrl = "http://localhost:4000/recipes/";
-
 function App() {
 
 
@@ -18,9 +16,7 @@ function App() {
                 <RecipesProvider>
                     <NavBar />
                     <main>
-                        <Outlet
-                            // baseUrl = { baseUrl }
-                        />
+                        <Outlet/>
                     </main>
                 </RecipesProvider>
             </ThemeProvider>

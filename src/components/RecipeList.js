@@ -12,7 +12,7 @@ function RecipeList() {
     const className = `recipe-list-${isDark ? "dark" : "light"}`;
     const [isBreakfast, setIsBreakfast] = useState(false);
 
-    // isBreakfast commented out as I will make that a select feature to show items based on Dish category and also add to AddRecipe
+    // isBreakfast commented out as I will make that a select feature to show items based on Dish category and also add to AddRecipe.  Plan for isBreakfast to become isVegetarian, and to add a separate item of state, 'isMealType' and it would be an object with each meal category, ie. Breakfast, Lunch etc as a boolean so a user can select any number of meal types at once? Using Radio buttons?
     // function handleClick() {
     //     setIsBreakfast(!isBreakfast);
     // }

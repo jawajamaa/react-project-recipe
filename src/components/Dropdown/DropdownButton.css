@@ -12,24 +12,32 @@
 
 .dropdown-btn-dark{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    width: fit-content;
+    width: 100%;
+    /* width: fit-content; */
     padding: 1rem;
-    background-color: var(--background-color);
-    color: var(--primary-text-color);
+    background-color: white;
+    /* background-color: var(--background-color); */
+    color: var(--secondary-text-color);
+    /* color: var(--primary-text-color); */
     border-radius: 5px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
     cursor: pointer;
 
 }
 .dropdown-btn-light{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    width: fit-content;
+    width: 100%;
+    /* height: 50%; */
+    /* width: fit-content; */
     padding: 1rem;
-    background-color: var(--light-background-color);
+    background-color: white;
+    /* background-color: var(--light-background-color); */
     border-radius: 5px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
     cursor: pointer;
 }
 

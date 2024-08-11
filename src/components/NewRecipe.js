@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import { useOutletContext } from "react-router-dom";
 import { useBaseUrl } from "../BaseUrlContext";
 import { useRecipes } from "../RecipesContext";
 import { useTheme } from "../ThemeContext";
@@ -31,7 +30,6 @@ function NewRecipe() {
         } = formData;
 
     const { baseUrl } = useBaseUrl();
-    // const baseUrl = useOutletContext();
     const { isDark } = useTheme();
     const { recipes, setRecipes } = useRecipes();
 
@@ -39,7 +37,6 @@ function NewRecipe() {
     const buttonClass = `myButton-${isDark ? "dark" : "light"}`;
 
     function handleChange(evt) {
-        // console.log(evt.target.value);
         setFormData({
             ...formData,
             [evt.target.name]: evt.target.value
@@ -113,7 +110,6 @@ function NewRecipe() {
                             <div className = "dropdown">
                                 <Dropdown 
                                     buttonText = {!category ? "Select One" : category}
-                                    // buttonText = "Select One"
                                     content = {
                                         <>
                                             {foodCategories.map(meal => (
@@ -128,19 +124,7 @@ function NewRecipe() {
                                     }
                                 />
                             </div>
-                            {/* <input>
-                                value = { category }>
-                            </input> */}
                         </label>
-                        {/* <label>Dish Category:
-                        <input 
-                            type = "text"
-                            name = "category"
-                            placeholder = "Dish Category"
-                            value = { category }
-                            onChange = { handleChange }
-                        />
-                        </label> */}
                         <label>Is the dish vegetarian?
                         <input 
                             type = "text"
