@@ -120,6 +120,17 @@
       "url": "https://docs.google.com/document/d/15Re3AxpqKIKtM7u6dRoPf1-_fICcYNQA-r3mEILdtKo/edit",
       "thumb": "/images/300-square/brussels_sausage-AdobeStk_571109862-300px.jpg",
       "image": "/images/1560-square/brussels_sausage-AdobeStk_571109862.jpg"
-    } 
+    },
+    {
+      "id": "44e6",
+      "name": "Chili",
+      "category": "Dinner",
+      "vegetarian": "No",
+      "prepTime": 45,
+      "myPrepTime": 120,
+      "url": "https://docs.google.com/document/d/1NxnL4JrFjPJ6gwzCC4Q4dsqnr_SftOzj85EwEYo62xk/edit",
+      "thumb": "/images/300-square/chili-bowl-AdobeStk_857651093-300px.jpg",
+      "image": "/images/1560-square/chili-bowl-AdobeStk_857651093.jpg"
+    }
   ]
 }
